@@ -13,6 +13,10 @@ layout: default
                     <h2 class="subheading">{{ page.subtitle }}</h2>
                     {% endif %}
                     <span class="meta">Posted by {{ page.author }} on {{ page.date | date: "%B %-d, %Y" }}</span>
+					<button class="btn btn-default" type="button" style="height:54px;">
+					<a id="fp-start" onclick="fullpageinit();" title="Presentation Mode">
+					  <span class="octicon octicon-gift"></span></a>
+					</button>		
                 </div>
             </div>
         </div>
