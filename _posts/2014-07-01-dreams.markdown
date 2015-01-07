@@ -8,7 +8,6 @@ header-img: "img/post-bg-02.jpg"
 
 theme:		sky
 trans:		line
-path:		https://cdn.rawgit.com/ahmetcecen/Project-Pages/gh-pages/_posts/2014-07-01-dreams.markdown
 
 ---
 
@@ -49,11 +48,11 @@ Measured shear strain rates  for oxygen-free high-conductivity (OFHC) copper. No
 
 [![Image](http://ars.els-cdn.com/content/image/1-s2.0-S1359646208006131-gr2.jpg)](http://www.sciencedirect.com/science/article/pii/S1359646208006131)
 
-
+<section>
 Measured shear strains for this set of experiments fall in the 3-12 range.
 
 [![Image](http://ars.els-cdn.com/content/image/1-s2.0-S1359646208006131-gr1.jpg)](http://www.sciencedirect.com/science/article/pii/S1359646208006131)
-
+</section>
 
 
 # Processing Effects on Microstructure
