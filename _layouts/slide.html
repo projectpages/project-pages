@@ -4,10 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>reveal.js - The HTML Presentation Framework</title>
-
-		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Hakim El Hattab">
+		<title>{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
 
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -15,7 +12,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 		<link rel="stylesheet" href="{{"/css/reveal.min.css" | prepend: site.baseurl}}">
-		<link rel="stylesheet" href="{{"/css/theme/default.css" | prepend: site.baseurl}}" id="theme">
+		<link rel="stylesheet" href="{{"/css/theme/{{ page.theme }}.css" | prepend: site.baseurl}}" id="theme"> <!-- This is where THEME --> 
 
 		<!-- For syntax highlighting -->
 		<link rel="stylesheet" href="{{"/lib/css/zenburn.css" | prepend: site.baseurl}}">
@@ -37,11 +34,12 @@
 	</head>
 
 	<body>
-
 		<div class="reveal">
-
-			{{ content }}
-
+			<div class="slides">
+				<!-- Use external markdown resource, separate slides by three newlines; vertical slides by two newlines ^\n##\s -->
+                <section data-markdown data-separator="^\n\n\n" data-vertical="^\n\n" data-notes="^!@$#" ></section>
+				{{ content }}
+			</div>
 		</div>
 
 		<script src="{{"/lib/js/head.min.js" | prepend: site.baseurl}}"></script>
@@ -58,7 +56,7 @@
 				center: true,
 
 				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+				transition: '{{ page.trans }}', // default/cube/page/concave/zoom/linear/fade/none
 
 				// Parallax scrolling
 				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
