@@ -7,7 +7,7 @@ header-img: "img/post-bg-02.jpg"
 
 theme:		sky
 trans:		line
-path:		http://raw.githubusercontent.com/ahmetcecen/Project-Pages/gh-pages/_posts/2014-07-01-dreams.markdown
+path:		https://cdn.rawgit.com/ahmetcecen/Project-Pages/gh-pages/_posts/2014-07-01-dreams.markdown
 ---
 
 # Project Timeline
@@ -19,7 +19,7 @@ Our semester long project proceeded in the following chronological order
 3. November - Develop relevant statistics based on calculating chord length distributions. Begin data reduction in PC space. Some other exploratory statistics that failed (see below).
 4. December - Finalize data reduction tasks in PC space. Explore machine learning possibilities from given data set. Develop visualizations and presentation.
 
-
+----
 
 # Work Load Distribution
 
