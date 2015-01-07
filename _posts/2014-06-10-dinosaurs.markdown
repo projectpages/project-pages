@@ -16,15 +16,9 @@ header-img: "img/post-bg-01.jpg"
 </section>
 
 <section>
-	<h2>Heads Up</h2>
-	<p>
-		reveal.js is a framework for easily creating beautiful presentations using HTML. You'll need a browser with
-		support for CSS 3D transforms to see it in its full glory.
-	</p>
 
-	<aside class="notes">
-		Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-	</aside>
+**TRY THIS**
+
 </section>
 
 <!-- Example of nested vertical slides -->
