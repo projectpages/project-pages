@@ -8,7 +8,7 @@ header-img: "img/post-bg-02.jpg"
 theme:		sky
 trans:		line
 ---
-
+{% raw %}
 
 # Project Timeline
 
@@ -58,3 +58,5 @@ The imposed thermomechanical processing route can induce significant microstruct
 - Grain refinement
 - Increase in dislocation density
 - Increase in twin density
+
+{% endraw %}
