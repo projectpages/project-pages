@@ -24,7 +24,7 @@
 			'css3': false,
 			'scrollingSpeed': 700,
 			'autoScrolling': true,
-			'easing': false,
+			'easing': 'easeInQuart',
 			'easingcss3': 'ease',
 			'loopBottom': false,
 			'loopTop': false,

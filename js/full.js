@@ -59,6 +59,7 @@ function Present() {
                             .css('z-index','10')
                             .css('top', '40px')
                             .css('right', '40px')
+                            .draggable()
 
     $('.section').each( function(){
       $(this).wrapInner( "<div class='container'></div>")
