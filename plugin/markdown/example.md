@@ -58,6 +58,7 @@ The manufacturing community has begun to investigate linkages between processing
 
 [![Image](http://ars.els-cdn.com/content/image/1-s2.0-S1359645409004807-gr8.jpg)](http://www.sciencedirect.com/science/article/pii/S1359645409004807)
 
+##
 The goal of the present work is to explore process-structure linkages in priciple component (PC) space while quantifying structure gradients present in machined chips. Gradients in the direction perpendicular to the machined surface will be addressed. 7 unique processing conditions will be utilized. The structure we are addressing are grain boundaries.
 
 [![Image](http://matinfteam4.github.io/images/final/chip5x.png)](http://matinfteam4.github.io/images/final/chip5x.png)
