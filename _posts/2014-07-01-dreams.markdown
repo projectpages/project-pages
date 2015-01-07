@@ -1,4 +1,5 @@
 ---
+
 layout:     slide
 title:      "The dreams of yesterday are the hopes of today and the reality of tomorrow."
 date:       2014-07-01 12:00:00
@@ -8,6 +9,7 @@ header-img: "img/post-bg-02.jpg"
 theme:		sky
 trans:		line
 path:		https://cdn.rawgit.com/ahmetcecen/Project-Pages/gh-pages/_posts/2014-07-01-dreams.markdown
+
 ---
 
 
