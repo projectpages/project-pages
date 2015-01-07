@@ -31,7 +31,7 @@ Measured shear strain rates  for oxygen-free high-conductivity (OFHC) copper. No
 Measured shear strains for this set of experiments fall in the 3-12 range.
 [![Image](http://ars.els-cdn.com/content/image/1-s2.0-S1359646208006131-gr1.jpg)](http://www.sciencedirect.com/science/article/pii/S1359646208006131)
 
-#Processing Effects on Microstructure
+# Processing Effects on Microstructure
 
 The imposed thermomechanical processing route can induce significant microstructural changes in both the machined workpiece and the produced chip. Microstructural changes may include but are not limited to,
 
@@ -45,7 +45,7 @@ Micrograph from a quick-stop machining experiment displaying the gradation of st
 TEM work showing features on the nanometer length scale.
 [![Image](http://ars.els-cdn.com/content/image/1-s2.0-S0921509305008166-gr3.jpg)](http://www.sciencedirect.com/science/article/pii/S0921509305008166)
 
-#Problem Statement 
+# Problem Statement 
 
 The manufacturing community has begun to investigate linkages between processing and structure in machining. The motivation is that designers can produce better components if surface structure is tailored for specific applications; highly refined grain structure could be beneficial for fretting applications but deleterious in a corrosive environment.
 
@@ -55,7 +55,7 @@ The goal of the present work is to explore process-structure linkages in pricipl
 
 [![Image](http://matinfteam4.github.io/images/final/chip5x.png)](http://matinfteam4.github.io/images/final/chip5x.png)
 
-#Experimental
+# Experimental
 
 The orthogonal cutting model is 2D a experimental technique that assumes a plane strain condition in the depth direction. Experiments can be performed that approximate this condition and are valuable as they simplify geometry such that 2D inspection of the microstructure is sufficient to characterize the chip or workpiece.
 
@@ -72,7 +72,7 @@ A number of experiments were performed across three feeds and five speeds. Sampl
 
 [![Image](http://matinfteam4.github.io/images/final/experiment2.png)](http://matinfteam4.github.io/images/final/experiment2.png)
 
-#Microstructure Segmentation
+# Microstructure Segmentation
 
 The following procedure was used to process, segment and develop chord-length distributions.
 
@@ -97,7 +97,7 @@ Each distribution in a sample image can be seen below.
 
 Note that the later definition does a much better job of describing the longer chord lengths away from the machined surface.  This agrees with what is expected as larger grains are observed further away from the machined surface.
 
-#Attempt at Spatial statistics 
+# Attempt at Spatial statistics 
 
 An attempt was made directly use the segmented binary images to generate spatial statistics. This was discussed in part in a blog posted on [11-04-2014](http://matinfteam4.github.io/blog/Preliminary-Spatial-Statistics-Results/ "11-04-2014").
 
@@ -114,7 +114,7 @@ There are however a few concerns associated with quantitatively using these resu
 
 As such it was decided that the chord length distributions should be used to quantify the microstructure rather than spatial statistics.
   
-#Data Reduction
+# Data Reduction
 
 Chord length distributions were developed across all rows of pixels in each image. Frequency of chord lengths were summed over all 5 images for each process condition. This represents the "averaged" data set. 
 
@@ -129,7 +129,9 @@ There appeared to be NO clustering of data in the bottom 50 pixels of each image
 [![Image](http://matinfteam4.github.io/images/final/PC1.png)](http://matinfteam4.github.io/images/final/PC1.png)
 
  
-#Results
+# Results
+
+### HEADER3
 
 ## Machine Learning
 
@@ -154,7 +156,7 @@ The images were taken by incrementally translating over the chip along the lengt
 
 It is certainly possible that the identical polishing and etching technique could produce varying results in different chips as chips potentially contain varying degrees of work hardening and residual stresses. However it is unclear why etch gradients exist in individual chips. It is possible that polishing mechanics differ between the interior and edges due to the presence of stainless steel clips in the center (if say the holders are more resistive to the abrasion process and are slightly elevated relative to chip). Analogously a similar argument could explain why using a swabbing etching technique could preferentially etch material due to the presence of the clip holders (i.e. more pressure can be applied away from the clip while swabbing thus breaking up protective oxide layers).
 
-#Conclusions
+# Conclusions
 
 - Current techniques are fairly successful in classifying the structure towards the inner parts of the chips for the current dataset.
 - The current techniques cannot resolve information close to the machining surface as distinctly as the information farther away. 
@@ -162,7 +164,7 @@ It is certainly possible that the identical polishing and etching technique coul
 - Uneven etching effects were found to be effectively captured by the principal components of chord length distribution.
 - Process path learning was demonstrated with variable accuracy on the given dataset. Substantial improvements were possible, but not explored, due to the current limitations and amount of data.
 
-#Future Work
+# Future Work
 
 
 - More Reliable Imaging
