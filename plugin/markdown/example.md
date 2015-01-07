@@ -26,8 +26,10 @@ The described strain-rate-temperature conditions define a thermomechanical proce
 
 Measured shear strain rates  for oxygen-free high-conductivity (OFHC) copper. Note that velocimetry techniques are limited to lower machining speeds; in this case a 0.01 m/s speed was utilized. Industrial applications maching at 3-5 m/s where strain rates may approach 10^5 1/s.
 
+## 
 [![Image](http://ars.els-cdn.com/content/image/1-s2.0-S1359646208006131-gr2.jpg)](http://www.sciencedirect.com/science/article/pii/S1359646208006131)
 
+## 
 Measured shear strains for this set of experiments fall in the 3-12 range.
 [![Image](http://ars.els-cdn.com/content/image/1-s2.0-S1359646208006131-gr1.jpg)](http://www.sciencedirect.com/science/article/pii/S1359646208006131)
 
