@@ -1,0 +1,191 @@
+---
+layout: post
+title: A Javascript Stack for Science
+tagline: An example of a few Javascript libraries that provide enhanced dynamicism to information.
+
+file: "/research-pages/assets/data/embedding.json"
+file2: "/research-pages/assets/data/embedding2.json"
+
+js:
+- name: MathJax
+  url: http://www.mathjax.org/ #0
+- name: Lightbox
+  url: http://lokeshdhakar.com/projects/lightbox2/ #1
+- name: Fullpage.js
+  url: http://alvarotrigo.com/fullPage/ #2
+- name: JQuery
+  url: http://jquery.com/ #3
+- name: D3
+  url: http://d3js.org #4
+- name: Mermaid
+  url: https://github.com/knsv/mermaid #5
+
+css:
+- name: Bootstrap
+  url: http://getbootstrap.com #0
+- name: Jekyll
+  url: http://jekyllrb.com #1
+- name: Octicons
+  url: http://octicons.github.com #2
+- name: Liquid
+  url: https://github.com/Shopify/liquid/wiki/Liquid-for-Designers
+
+external:
+- name: Disqus
+  url: http://disqus.com #0
+- name: Embedly
+  url: http://embed.ly #0
+- name: SlideShare
+  url: http://slideshare.net/tonyfast1 #0
+
+references:
+- http://d3js.org #0
+- http://alikhosravani.github.io/MIC-Al6061-NIST-project/2014/09/17/Project-description.html #1
+- http://tonyfast.com/Titanium/ #2
+- http://jekyllrb.com
+- http://jekyllrb.com/docs/frontmatter/
+- http://disqus.com
+- http://www.mathjax.org/
+- https://github.com/Shopify/liquid/wiki/Liquid-for-Designers
+- http://alvarotrigo.com/fullPage/
+- https://github.com/knsv/mermaid #9
+- http://bl.ocks.org/tonyfast/b77d1cb766f65f026c67
+- http://nbviewer.ipython.org/gist/tonyfast/242af9bda2517a9179c0/blog-to-data.ipynb #11
+---
+
+{% assign ref=page.references %}
+
+## This Post
+
+<h4><i>Illustrates the powerful capabilities Javascript offers for creating personalized
+  and dynamic visualizations of dense scientific information... fluff too.</i></h4>
+
+> It only works in Chrome.  I am coming to this as a scientist, not a developer.
+
+## What to do?
+
+* Iteract with the [d3]({{ref[0]}}) visualizations to explore real materials science datasets.
+
+  The d3 plots are reduced embeddings for real machine learning examples.  This dynamic interaction
+  allows experts to rapidly peruse their information.
+
+  There are two of visualizations.
+
+    1. An exploration of [Al-Mg-Si SEM Images]({{ref[1]}}).
+    2. Micrographs of [$\alpha-\beta$ Titanium]({{ref[2]}})
+
+* Click the Stand-Alone Images to activate Lightbox for a gallery view of visual
+  information.
+
+    > I'll fix this soon, it's kinda broked.
+
+* Observe the references at the end that are automatically collated by a
+  customized [Jekyll template]({{ref[3]}}).
+
+    If you click on the <span class="octicon octicon-pencil"></span> in the menu bar at the top left you can see the
+    source for this post.  It is a hybrid of structured and unstructured data using
+    [YAML front matter]({{ref[4]}}).  References in this post and made using with
+    the [liquid syntax]({{ref[7]}}),
+    ``{% raw %}{{ref[i]}}{% endraw %}``.
+
+* Interact with the comments served up by [Disqus]({{ref[5]}}).
+* Click <span class="octicon octicon-gift"></span> to put the post into presentation mode
+  thanks to [fullpage.js]({{ref[8]}}).
+
+  The d3 visualizations will become easier to use and each the remaining sections
+  will be parsed into slides.
+
+## A Javascript Stack for Dynamic Presentation
+
+The complete set of tools used on this page is listed below.
+
+<table class="table table-bordered">
+<tr>
+  <th>
+    Javascript
+  </th>
+  <th>
+    Styling
+  </th>
+  <th>
+    External Services
+  </th>
+</tr>
+
+{% for thingies in page.js %}
+<tr>
+  <td>
+    <a href="{{ page.js[forloop.index0]['url']}}">{{page.js[forloop.index0]['name']}}</a>
+  </td>
+  <td>
+    <a href="{{ page.css[forloop.index0]['url']}}">{{page.css[forloop.index0]['name']}}</a>
+  </td>
+  <td>
+    <a href="{{ page.external[forloop.index0]['url']}}">{{page.external[forloop.index0]['name']}}</a>
+  </td>
+</tr>
+{% endfor %}
+</table>
+
+# All the Jazz
+
+# A Chart
+
+Easily create graphs using [Mermaid]({{ref[9]}})'s simple diagramming syntax.  There is a [bl.ocks.org]({{ref[10]}}) page that can
+be used to explore Mermaid.
+
+<style>
+.mermaid div{ color: black; }
+</style>
+
+<div class="mermaid">
+  graph LR;
+    A[Physics Based Model]-->B(Feature Identification);
+    B-->C(Feature Encoding);
+    B-->b1((segmentation));
+    C-->D(Data Analytics);
+    C-->c1((spatial statistics));
+    D-->|collaborate|E{Design};
+    D-->d1((PCA));
+    E-->|iterate|A;
+</div>
+
+{% assign file={{page.file}} %}
+{% include rembedder.html file=file %}
+
+
+## Some section explaining code
+
+{% highlight javascript %}
+function WhatsTheAnswer(){
+  return parseInt('42');
+{% endhighlight %}
+
+## Using Posts as Code
+
+<iframe src="{{ref[11]}}" width="100%" height="475px"></iframe>
+
+{% assign file={{page.file2}} %}
+{% include rembedder.html file=file %}
+
+## An Image
+
+> For good measure
+
+![One Image]({{site.data['example']['thumb']}})
+
+## Dolla Dolla Bills Y'all
+
+Fencing latex in ``$`` and ``$$`` will activate MathJax.
+
+eg.
+```
+$$\frac{d}{dx}\left( \int_{0}^{x} f(u)\,du\right)=f(x)$$
+```
+
+
+$$\frac{d}{dx}\left( \int_{0}^{x} f(u)\,du\right)=f(x).$$
+
+## And Another
+
+![@docfast](http://photos-b.ak.instagram.com/hphotos-ak-xfp1/10632254_450887461721113_670996025_n.jpg)
