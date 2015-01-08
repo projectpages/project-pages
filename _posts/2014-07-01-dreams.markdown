@@ -16,7 +16,7 @@ trans:		cube
 
 Our semester long project proceeded in the following chronological order
 
-
+---
 
 # Machining Introduction
 
@@ -24,5 +24,7 @@ Our semester long project proceeded in the following chronological order
 [![Image](http://ars.els-cdn.com/content/image/1-s2.0-S1359646208006131-gr2.jpg)](http://www.sciencedirect.com/science/article/pii/S1359646208006131)
 
 
-
+---
 ## Measured shear strains for this set of experiments fall in the 3-12 range.
+
+</script>
