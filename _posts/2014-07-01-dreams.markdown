@@ -54,7 +54,7 @@ Measured shear strains for this set of experiments fall in the 3-12 range.
 [![Image](http://ars.els-cdn.com/content/image/1-s2.0-S1359646208006131-gr1.jpg)](http://www.sciencedirect.com/science/article/pii/S1359646208006131)
 </section>
 
-
+<section>
 # Processing Effects on Microstructure
 
 The imposed thermomechanical processing route can induce significant microstructural changes in both the machined workpiece and the produced chip. Microstructural changes may include but are not limited to,
@@ -62,3 +62,5 @@ The imposed thermomechanical processing route can induce significant microstruct
 - Grain refinement
 - Increase in dislocation density
 - Increase in twin density
+
+</section>
