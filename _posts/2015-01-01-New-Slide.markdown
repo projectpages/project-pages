@@ -19,7 +19,10 @@ Leave 3 line space between content for horizontal slides.
 
 Leave 2 line space between content for vertical slides.
 
-</script> <!-- End Here -->
+<!-- End Here -->
 
 
 #[Back](/..)
+</script> 
+
+
