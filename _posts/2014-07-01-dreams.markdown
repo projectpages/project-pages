@@ -11,7 +11,7 @@ trans:		cube
 
 ---
 
-<script type="text/template">
+
 # Project Timeline
 
 Our semester long project proceeded in the following chronological order
@@ -25,4 +25,3 @@ Our semester long project proceeded in the following chronological order
 
 Measured shear strains for this set of experiments fall in the 3-12 range.
 
-</script>
