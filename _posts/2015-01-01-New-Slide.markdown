@@ -23,7 +23,7 @@ Leave 2 line space between content for vertical slides.
 <!-- End Here -->
 
 
-#[Print]({{ site.url }}{{ page.url }}/?print-pdf#)
+#[Print]({{ site.url }}{{ site.baseurl }}{{ page.url }}/?print-pdf#)
 #[Back](/../Project-Pages)
 </script> 
 
