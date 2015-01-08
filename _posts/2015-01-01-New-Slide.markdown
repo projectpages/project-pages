@@ -23,6 +23,7 @@ Leave 2 line space between content for vertical slides.
 <!-- End Here -->
 
 
+#[Print](/./?print-pdf#/)
 #[Back](/../Project-Pages)
 </script> 
 
