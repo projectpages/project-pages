@@ -10,7 +10,8 @@ trans:		default
 <script type="text/template">  
 #{{ page.title }}
 ##{{ page.author }}
-###{{ page.date }}<!-- Start Writing Below in Markdown -->
+###{{ page.date }}
+<!-- Start Writing Below in Markdown -->
 
 
 
@@ -22,7 +23,7 @@ Leave 2 line space between content for vertical slides.
 <!-- End Here -->
 
 
-#[Back](/..)
+#[Back](/../Project-Pages)
 </script> 
 
 
