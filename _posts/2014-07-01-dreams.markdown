@@ -25,4 +25,4 @@ Our semester long project proceeded in the following chronological order
 
 
 
-Measured shear strains for this set of experiments fall in the 3-12 range.
+## Measured shear strains for this set of experiments fall in the 3-12 range.
