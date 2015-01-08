@@ -1,0 +1,21 @@
+---
+layout:     slide
+title:      Presentation Headline
+date:       2015-01-01 12:00:00
+author:     Your Name
+
+theme:		solarized
+trans:		default
+---
+<script type="text/template">  
+#{{ page.title }}
+##{{ page.author }}
+###{{ page.date }}<!-- Start Writing Below in Markdown -->
+
+
+
+Leave 3 line space between content for horizontal slides.
+
+
+Leave 2 line space between content for vertical slides.
+</script> <!-- End Here -->
