@@ -7,7 +7,7 @@ author:     "Start Bootstrap"
 header-img: "img/post-bg-02.jpg"
 
 theme:		sky
-trans:		line
+trans:		cube
 
 ---
 
@@ -45,23 +45,19 @@ The described strain-rate-temperature conditions define a thermomechanical proce
 
 Measured shear strain rates  for oxygen-free high-conductivity (OFHC) copper. Note that velocimetry techniques are limited to lower machining speeds; in this case a 0.01 m/s speed was utilized. Industrial applications maching at 3-5 m/s where strain rates may approach 10^5 1/s.
 
-
+&zwnj
 [![Image](http://ars.els-cdn.com/content/image/1-s2.0-S1359646208006131-gr2.jpg)](http://www.sciencedirect.com/science/article/pii/S1359646208006131)
 
-<section>
 Measured shear strains for this set of experiments fall in the 3-12 range.
 
+&zwnj
 [![Image](http://ars.els-cdn.com/content/image/1-s2.0-S1359646208006131-gr1.jpg)](http://www.sciencedirect.com/science/article/pii/S1359646208006131)
-</section>
 
-<MUSTAFAR>
 # Processing Effects on Microstructure
 
 The imposed thermomechanical processing route can induce significant microstructural changes in both the machined workpiece and the produced chip. Microstructural changes may include but are not limited to,
 
-<KAZIMOV>
 - Grain refinement
 - Increase in dislocation density
 - Increase in twin density
 
-</MUSTAFAR>
