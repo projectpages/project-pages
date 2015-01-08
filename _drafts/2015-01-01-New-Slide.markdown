@@ -4,8 +4,8 @@ title:      Presentation Headline
 date:       2015-01-01 12:00:00
 author:     Your Name
 
-theme:		solarized
-trans:		default
+theme:		default/beige/blood/moon/night/serif/simple/sky/solarized
+trans:		default/cube/page/concave/zoom/linear/fade/none
 ---
 <script type="text/template">  
 #{{ page.title }}
