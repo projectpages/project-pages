@@ -71,6 +71,8 @@
 					{ src: '{{"/plugin/highlight/highlight.js" | prepend: site.baseurl}}', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
 					{ src: '{{"/plugin/zoom-js/zoom.js" | prepend: site.baseurl}}', async: true, condition: function() { return !!document.body.classList; } },
 					{ src: '{{"/plugin/notes/notes.js" | prepend: site.baseurl}}', async: true, condition: function() { return !!document.body.classList; } }
+					// MathJax
+        				{ src: '{{"/plugin/math/math.js" | prepend: site.baseurl}}', async: true }
 				]
 			});
 
