@@ -11,15 +11,17 @@ trans:		default # default/cube/page/concave/zoom/linear/fade/none
 #{{ page.title }}
 ##{{ page.author }}
 ###{{ page.date }}
+--horizontal
 <!-- Start Writing Below in Markdown -->
-
-
-
-Leave 3 line space between content for horizontal slides.
-
-
-Leave 2 line space between content for vertical slides.
-
+Seperate with --horizontal between content for horizontal slides.
+--horizontal
+Seperate with --vertical between content for vertical slides.
+--vertical
+Code will show up like this:
+```matlab
+[Q,R] = qr(X,0);
+H=Q*Q';yhat=X*R\(Q'*R);'
+```
 <!-- End Here -->
 
 
