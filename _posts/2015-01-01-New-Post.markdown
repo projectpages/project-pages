@@ -110,7 +110,7 @@ def _set_colors():
 
 #Tables:
 
-{% highlight markdown %}
+{% highlight ruby %}
 Here | is | a | row!
 is |Left|Center|Right|
 a | short
