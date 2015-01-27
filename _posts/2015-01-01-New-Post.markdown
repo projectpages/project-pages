@@ -8,13 +8,15 @@ author:     Your Name
 
 #Headers:
 
-```markdown
+<code>
+
 # Header 1
 
 ## Header 2
 
 ### Header 3
-```
+
+</code>
 
 # Header 1
 
@@ -25,6 +27,7 @@ author:     Your Name
 #Styling:
 
 ```
+
 **Bold**
 
 *Italics*
