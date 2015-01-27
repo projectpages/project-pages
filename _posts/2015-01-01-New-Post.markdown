@@ -110,12 +110,12 @@ def _set_colors():
 
 #Tables:
 
-{% highlight md %}
+'''
 Here | is | a | row!
 is |Left|Center|Right|
 a | short
 column|one
-{% endhighlight %}
+'''
 
 Here | is | a | row!
 is |Left|Center|Right|
