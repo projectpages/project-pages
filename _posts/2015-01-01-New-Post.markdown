@@ -112,23 +112,21 @@ def _set_colors():
 
 {% highlight markdown %}
 Here | is | a | row!
------|:----|:-----:|------:|
 is |Left|Center|Right|
 a | short
 column|one
 {% endhighlight %}
 
 Here | is | a | row!
------|:----|:-----:|------:|
 is |Left|Center|Right|
 a | short
 column|one
 
 #Quotes
 
-{% highlight markdown %}
+'''
 > War does not decide who is *right*, only who is **left**.
-{% endhighlight %}
+'''
 
 > War does not decide who is *right*, only who is **left**.
 
