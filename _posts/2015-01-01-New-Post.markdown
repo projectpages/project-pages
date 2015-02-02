@@ -8,16 +8,6 @@ author:     Your Name
 
 #Headers:
 
-<code>
-
-# Header 1
-
-## Header 2
-
-### Header 3
-
-</code>
-
 # Header 1
 
 ## Header 2
@@ -25,18 +15,6 @@ author:     Your Name
 ### Header 3
 
 #Styling:
-
-```
-
-**Bold**
-
-*Italics*
-
-***Bold and Italics***
-
-~~Strike~~
-
-```
 
 **Bold**
 
@@ -47,18 +25,6 @@ author:     Your Name
 ~~Strike~~
 
 #Lists:
-
-```
-1.Item 1
-
-2.Item 2
-
-*.Unordered Item 
-
-  * Sub Item 1
-
-    1 **Bold** Sub Sub Ordered Item
-```
 
 1.Item 1
 
@@ -72,16 +38,6 @@ author:     Your Name
 
 #Links:
 
-```
-[In-Line](https://www.google.com)
-
-[I'm a reference-style link 1][1]
-[I'm a reference-style link 1][2]
-
-[1]:https://www.mozilla.org
-[2]:http://www.reddit.com
-```
-
 [In-Line](https://www.google.com)
 
 [I'm a reference-style link 1][1]
@@ -91,10 +47,6 @@ author:     Your Name
 [2]:http://www.reddit.com
 
 #Images:
-
-```
-![Description](http://img3.wikia.nocookie.net/__cb20140102180853/fairytail/images/5/5b/Logo_Fairy_Tail_right.png)
-```
 
 ![Description](http://img3.wikia.nocookie.net/__cb20140102180853/fairytail/images/5/5b/Logo_Fairy_Tail_right.png)
 
@@ -110,30 +62,17 @@ def _set_colors():
 
 #Tables:
 
-```
 Here | is | a | row!
-is |Left|Center|Right|
-a | short
-column|one
-```
-
-Here | is | a | row!
+|----|:----|:----:|-----:|
 is |Left|Center|Right|
 a | short
 column|one
 
 #Quotes
 
-'''
-> War does not decide who is *right*, only who is **left**.
-'''
-
 > War does not decide who is *right*, only who is **left**.
 
 # Rule
-```
----
-```
 
 ---
 
