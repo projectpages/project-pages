@@ -62,10 +62,10 @@ def _set_colors():
 #Tables:
 
 Here | is | a | row!
-|--------|:---------|:---------:|--------:|
-is   |  Left  |  Center  |  Right  |
-a    | cut | it
-column  | short
+|---------|:----------|:----------:|---------:|
+is   |Left|  Center  |Right|
+a    | cut | it | A
+column  | short | B | C 
 
 #Quotes
 
