@@ -59,6 +59,11 @@ def _set_colors():
     HighRGB = np.array([26, 152, 80]) / 255.
 {% endhighlight %}
 
+#MathJax
+
+Use MathJax for Math.
+$$ A = \pi r^2 $$
+
 #Tables:
 
 Here | is | a | row!
