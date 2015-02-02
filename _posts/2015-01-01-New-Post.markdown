@@ -34,13 +34,14 @@ author:     Your Name
 
   * Sub Item 1
 
-    1 **Bold** Sub Sub Ordered Item
+    1. **Bold** Sub Sub Ordered Item
 
 #Links:
 
 [In-Line](https://www.google.com)
 
 [I'm a reference-style link 1][1]
+
 [I'm a reference-style link 1][2]
 
 [1]:https://www.mozilla.org
