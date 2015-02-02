@@ -72,33 +72,23 @@ import numpy as np
 def _set_colors():
     HighRGB = np.array([26, 152, 80]) / 255.
 ```
---horizontal
-#Tables:
 
-Here | is | a | row!
-|---------|:----------|:----------:|---------:|
-is   |Left|  Center  |Right|
-a    | cut | it | A
-column  | short | B | C 
 --horizontal
 #Quotes
 
 > War does not decide who is *right*, only who is **left**.
---horizontal
-# Rule
 
----
 --horizontal
 #HTML
 
-You actually can not write in HTML using this template. If you want to create HTML presentations using this framework head over to [Reveal.js](http://lab.hakim.se/reveal-js/#/)
+You actually can not write in HTML using this template. If you want to create HTML presentations using this framework head over to [reveal.js](http://lab.hakim.se/reveal-js/#/)
 
 <!-- End Here -->
 --vertical
 #[Print]({{ site.url }}{{ site.baseurl }}{{ page.url }}/?print-pdf#)
 #[Back](/../Project-Pages)
 
-### Created using [reveal.js](http://lab.hakim.se/reveal-js/#/) by [Hakim El Hattab](http://hakim.se/).
+Created using [reveal.js](http://lab.hakim.se/reveal-js/#/) by [Hakim El Hattab](http://hakim.se/).
 </script> 
 
 
