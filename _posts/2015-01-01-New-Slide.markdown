@@ -43,6 +43,9 @@ Press B to pause the presentation.
 
 ***Bold and Italics***
 --horizontal
+Use MathJax for Math.
+$$ A = \pi r^2 $$
+--horizontal
 #Lists:
 
 1. Item 1
