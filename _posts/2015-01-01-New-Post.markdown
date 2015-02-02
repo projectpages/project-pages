@@ -22,15 +22,13 @@ author:     Your Name
 
 ***Bold and Italics***
 
-~~Strike~~
-
 #Lists:
 
 1.Item 1
 
 2.Item 2
 
-*.Unordered Item 
+* Unordered Item 
 
   * Sub Item 1
 
@@ -64,7 +62,7 @@ def _set_colors():
 #Tables:
 
 Here | is | a | row!
-|----|:----|:----:|-----:|
+|--------|:---------|:---------:|--------:|
 is |Left|Center|Right|
 a | short
 column|one
