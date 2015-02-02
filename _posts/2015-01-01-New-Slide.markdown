@@ -19,6 +19,14 @@ Seperate with --horizontal between content for horizontal slides.
 --vertical
 Seperate with --vertical between content for vertical slides.
 --horizontal
+Press ESC for a zoomed out overview of the presentation.
+--horizontal
+Press S for presenter view. Use --notes to add presenter notes.
+--notes
+Lorem Ipsum Dolor
+--horizontal
+Press B to pause the presentation.
+--horizontal
 #Headers:
 
 # Header 1
