@@ -13,7 +13,7 @@ trans:		default # default/cube/page/concave/zoom/linear/fade/none
 ###{{ page.date }}
 --horizontal
 <!-- Start Writing Below in Markdown -->
-Showcasing Presentation Features
+Showcasing Presentation Features. This template is ideal for very quickly creating decent presentations when content and simplicity is more important than excessivr styling. 
 --horizontal
 Seperate with --horizontal between content for horizontal slides.
 --vertical
