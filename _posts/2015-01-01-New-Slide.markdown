@@ -76,12 +76,12 @@ def _set_colors():
 --horizontal
 #Quotes
 
-> War does not decide who is *right*, only who is **left**.
+> War does not decide who is right, only who is **left**.
 
 --horizontal
 #HTML
 
-You actually can not write in HTML using this template. If you want to create HTML presentations using this framework head over to [reveal.js](http://lab.hakim.se/reveal-js/#/)
+You actually can not write in HTML using this template. If you want to create HTML presentations using this framework head over to [reveal.js](http://lab.hakim.se/reveal-js/#/).
 
 <!-- End Here -->
 --vertical
