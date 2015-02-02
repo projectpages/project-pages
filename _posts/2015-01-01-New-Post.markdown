@@ -24,9 +24,9 @@ author:     Your Name
 
 #Lists:
 
-1.Item 1
+1. Item 1
 
-2.Item 2
+2. Item 2
 
 * Unordered Item 
 
@@ -63,9 +63,9 @@ def _set_colors():
 
 Here | is | a | row!
 |--------|:---------|:---------:|--------:|
-is |Left|Center|Right|
-a | short
-column|one
+is   |  Left  |  Center  |  Right  |
+a    | cut | it
+column  | short
 
 #Quotes
 
