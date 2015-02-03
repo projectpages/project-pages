@@ -2,7 +2,7 @@
 layout:     post
 title:      Post Headline
 date:       2015-01-01 12:00:00
-author:     Your Name
+author:     Materials Innovation
 ---
 <!-- Start Writing Below in Markdown -->
 
@@ -28,7 +28,7 @@ author:     Your Name
 
 2. Item 2
 
-* Unordered Item 
+* Unordered Item
 
   * Sub Item 1
 
@@ -70,7 +70,7 @@ Here | is | a | row!
 |---------|:----------|:----------:|---------:|
 is   |Left|  Center  |Right|
 a    | cut | it | A
-column  | short | B | C 
+column  | short | B | C
 
 #Quotes
 
@@ -82,5 +82,5 @@ column  | short | B | C
 
 #HTML
 
-Can write the whole post or sections in HTML for very specific needs. [For the advanced user or the code savvy.] 
+Can write the whole post or sections in HTML for very specific needs. [For the advanced user or the code savvy.]
 

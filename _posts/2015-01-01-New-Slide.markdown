@@ -2,18 +2,18 @@
 layout:     slide
 title:      Presentation Headline
 date:       2015-01-01 12:00:00
-author:     Your Name
+author:     Materials Innovation
 
 theme:		blood # default/beige/blood/moon/night/serif/simple/sky/solarized
 trans:		default # default/cube/page/concave/zoom/linear/fade/none
 ---
-<script type="text/template">  
+<script type="text/template">
 #{{ page.title }}
 ##{{ page.author }}
 ###{{ page.date }}
 --horizontal
 <!-- Start Writing Below in Markdown -->
-Showcasing Presentation Features. This template is ideal for very quickly creating decent presentations when content and simplicity is more important than excessivr styling. 
+Showcasing Presentation Features. This template is ideal for very quickly creating decent presentations when content and simplicity is more important than excessivr styling.
 --horizontal
 Seperate with --horizontal between content for horizontal slides.
 --vertical
@@ -52,7 +52,7 @@ $$ A = \pi r^2 $$
 
 2. Item 2
 
-* Unordered Item 
+* Unordered Item
 
   * Sub Item 1
 
@@ -100,6 +100,6 @@ You actually can not write in HTML using this template. If you want to create HT
 #[Back](/../Project-Pages)
 
 Created using [reveal.js](http://lab.hakim.se/reveal-js/#/) by [Hakim El Hattab](http://hakim.se/).
-</script> 
+</script>
 
 
