@@ -3,7 +3,7 @@ title: Project Pages
 header-img: img/home-bg.jpg
 email: your-email@yourdomain.com
 description: "Write your site description here. It will be used as your sites meta description as well!"
-baseurl: "/Project-Pages"
+baseurl: "/project-pages"
 url: "http://ahmetcecen.github.io"
 github_username:  ahmetcecen
 
