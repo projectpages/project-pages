@@ -5,7 +5,8 @@ email: your-email@yourdomain.com
 description: "Write your site description here. It will be used as your sites meta description as well!"
 baseurl: "/project-pages"
 url: "http://materialsinnoviation.github.io"
-github_username:  materialsinnoviation
+github_username:  materialsinnovation
+project_name: project-pages
 
 # Build settings
 markdown: kramdown
