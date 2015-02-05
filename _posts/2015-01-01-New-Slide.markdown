@@ -97,7 +97,7 @@ You actually can not write in HTML using this template. If you want to create HT
 <!-- End Here -->
 --vertical
 #[Print]({{ site.url }}{{ site.baseurl }}{{ page.url }}/?print-pdf#)
-#[Back](/../Project-Pages)
+#[Back]({{ site.url }}{{ site.baseurl }})
 
 Created using [reveal.js](http://lab.hakim.se/reveal-js/#/) by [Hakim El Hattab](http://hakim.se/).
 </script>
