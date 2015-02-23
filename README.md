@@ -35,4 +35,4 @@ To create a new presentation, copy and update the frontmatter from the example s
     trans:		default # default/cube/page/concave/zoom/linear/fade/none
     ---
 
-For more information, click (here)[http://jekyllrb.com/docs/posts/]
+For more information, click [here](http://jekyllrb.com/docs/posts/)
