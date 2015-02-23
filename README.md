@@ -16,23 +16,23 @@ share ideas, intermediate results and research progress with each other.
 
 Create a new .markdown file in the _post directory with the date and title of the post (title YEAR-MONTH-DAY-title.md), and update the yaml frontmatter. For a new blog post, copy and update the yaml frontmatter from the example blog file 2015-01-01-New-Post.markdown. Here is an example for a new blog post.
 
-  ---
-  layout:     post
-  title:      Post Headline
-  date:       2015-01-01 12:00:00
-  author:     Materials Innovation
-  ---
+    ---
+    layout:     post
+    title:      Post Headline
+    date:       2015-01-01 12:00:00
+    author:     Materials Innovation
+    ---
 
 To create a new presentation, copy and update the frontmatter from the example slide file 2015-01-01-New-Slide.markdown. Here is an example
 
-  ---
-  layout:     slide
-  title:      Presentation Headline
-  date:       2015-01-01 12:00:00
-  author:     Materials Innovation
-  
-  theme:		blood # default/beige/blood/moon/night/serif/simple/sky/solarized
-  trans:		default # default/cube/page/concave/zoom/linear/fade/none
-  ---
+    ---
+    layout:     slide
+    title:      Presentation Headline
+    date:       2015-01-01 12:00:00
+    author:     Materials Innovation
+    
+    theme:		blood # default/beige/blood/moon/night/serif/simple/sky/solarized
+    trans:		default # default/cube/page/concave/zoom/linear/fade/none
+    ---
 
 For more information, click (here)[http://jekyllrb.com/docs/posts/]
