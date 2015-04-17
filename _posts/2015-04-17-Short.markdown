@@ -16,7 +16,7 @@ trans:		default # default/cube/page/concave/zoom/linear/fade/none
 ## Short Bio
 * 2nd Year Graduate Student in CSE
 * 5 Years Working with Dr.Kalidindi
-* Stonger on the Computational Side more then Mechanical or Materials
+* Stonger on the Computational Side more than Mechanical or Materials
 --horizontal
 ## Some Skills
 * Area: Computational Materials Science with a Focus on Materials Informatics
@@ -31,84 +31,21 @@ trans:		default # default/cube/page/concave/zoom/linear/fade/none
   - Graph Analysis              
   - *Web Development & Automation*
 --horizontal
-
-
---horizontal
-Press ESC for a zoomed out overview of the presentation.
---horizontal
-Press S for presenter view. Use --notes to add presenter notes.
---notes
-Lorem Ipsum Dolor
---horizontal
-Press B to pause the presentation.
---horizontal
-#Headers:
-
-# Header 1
-
-## Header 2
-
-### Header 3
---horizontal
-#Styling:
-
-**Bold**
-
-*Italics*
-
-***Bold and Italics***
---horizontal
-Use MathJax for Math.
-$$ A = \pi r^2 $$
---horizontal
-#Lists:
-
-1. Item 1
-
-2. Item 2
-
-* Unordered Item
-
-  * Sub Item 1
-
-    1. **Bold** Sub Sub Ordered Item
---horizontal
-#Links:
-
-[In-Line](https://www.google.com)
-
-[I'm a reference-style link 1][1]
-
-[I'm a reference-style link 1][2]
-
-[1]:https://www.mozilla.org
-[2]:http://www.reddit.com
---horizontal
-#Images:
-
-![Description](http://img3.wikia.nocookie.net/__cb20140102180853/fairytail/images/5/5b/Logo_Fairy_Tail_right.png)
---horizontal
-#Code:
-
-Inline `code`.
-
+# Some Projects
 --vertical
-```python
-import numpy as np
-def _set_colors():
-    HighRGB = np.array([26, 152, 80]) / 255.
-```
-
+## Fuel Cells
+![Description](http://ahmetcecen.github.io/project-pages/img/MPL.png)
+--vertical
+## Inclusions in Steel Matrix
+![Description](http://ahmetcecen.github.io/project-pages/img/Inclusions.png)
+--vertical
+## Dual Phase Steels
+![Description](http://ahmetcecen.github.io/project-pages/img/MPIE.png)
+--vertical
+## Al-Cu Solidification
+![Description](http://ahmetcecen.github.io/project-pages/img/MURI.png)
 --horizontal
-#Quotes
-
-> War does not decide who is right, only who is **left**.
-
---horizontal
-#HTML
-
-You actually can not write in HTML using this template. If you want to create HTML presentations using this framework head over to [reveal.js](http://lab.hakim.se/reveal-js/#/).
-
+# Thank You
 <!-- End Here -->
 --vertical
 #[Print]({{ site.url }}{{ site.baseurl }}{{ page.url }}/?print-pdf#)
