@@ -36,9 +36,6 @@ trans:		default # default/cube/page/concave/zoom/linear/fade/none
 ## Fuel Cells
 ![Description](http://ahmetcecen.github.io/project-pages/img/MPL.png)
 --vertical
-## Inclusions in Steel Matrix
-![Description](http://ahmetcecen.github.io/project-pages/img/Inclusions.png)
---vertical
 ## Dual Phase Steels
 ![Description](http://ahmetcecen.github.io/project-pages/img/MPIE.png)
 --vertical
@@ -50,6 +47,4 @@ trans:		default # default/cube/page/concave/zoom/linear/fade/none
 --vertical
 #[Print]({{ site.url }}{{ site.baseurl }}{{ page.url }}/?print-pdf#)
 #[Back]({{ site.url }}{{ site.baseurl }})
-
-Created using [reveal.js](http://lab.hakim.se/reveal-js/#/).
 </script>
