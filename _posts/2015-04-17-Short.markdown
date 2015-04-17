@@ -33,9 +33,6 @@ trans:		default # default/cube/page/concave/zoom/linear/fade/none
 --horizontal
 # Some Projects
 --vertical
-## Fuel Cells
-![Description](http://ahmetcecen.github.io/project-pages/img/MPL.png)
---vertical
 ## Dual Phase Steels
 ![Description](http://ahmetcecen.github.io/project-pages/img/MPIE.png)
 --vertical
