@@ -92,5 +92,5 @@ Can write the whole post or sections in HTML for very specific needs. [For the a
 # Experimental Features 
 
 ## Color 
-{{red}}}Red Text Incoming!{{endcolor}}
-When you want to {{blue}}}Blue Inline Text Incoming!{{endcolor}} change color!
+{{red}}Red Text Incoming!{{endcolor}}
+When you want to {{blue}}Blue Inline Text Incoming!{{endcolor}} change color!
