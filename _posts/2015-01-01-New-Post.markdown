@@ -4,10 +4,10 @@ title:      Post Headline
 date:       2015-01-01 12:00:00
 author:     Materials Innovation
 
-red: <p style="color:red">
-blue: <p style="color:blue">
-green: <p style="color:green">
-endcolor: </p>
+red: <span style="color:red">
+blue: <span style="color:blue">
+green: <span style="color:green">
+endcolor: </span>
 ---
 <!-- Start Writing Below in Markdown -->
 
@@ -92,7 +92,7 @@ Can write the whole post or sections in HTML for very specific needs. [For the a
 # Experimental Features 
 
 ## Color 
-<p style="color:red">Red Text Incoming!</p>
+<span style="color:red">Red Text Incoming!</span>
 {{page.red}} Red Text {{page.endcolor}}
 
 <p>or inline like this {{page.blue}}Red Text{{page.endcolor}} correct?</p>
