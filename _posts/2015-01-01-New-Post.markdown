@@ -3,6 +3,11 @@ layout:     post
 title:      Post Headline
 date:       2015-01-01 12:00:00
 author:     Materials Innovation
+
+red:<p style="color:red">
+blue:<p style="color:blue">
+green:<p style="color:green">
+endcolor:</p>
 ---
 <!-- Start Writing Below in Markdown -->
 
@@ -84,3 +89,8 @@ column  | short | B | C
 
 Can write the whole post or sections in HTML for very specific needs. [For the advanced user or the code savvy.]
 
+# Experimental Features 
+
+## Color 
+{{red}}}Red Text Incoming!{{endcolor}}
+When you want to {{blue}}}Blue Inline Text Incoming!{{endcolor}} change color!
