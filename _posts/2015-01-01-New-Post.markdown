@@ -95,4 +95,4 @@ Can write the whole post or sections in HTML for very specific needs. [For the a
 <p style="color:red">Red Text Incoming!</p>
 {{page.red}} Red Text {{page.endcolor}}
 
-or inline like this {{page.blue}}Red Text{{page.endcolor}} correct?
+<p>or inline like this {{page.blue}}Red Text{{page.endcolor}} correct?</p>
