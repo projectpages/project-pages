@@ -93,6 +93,6 @@ Can write the whole post or sections in HTML for very specific needs. [For the a
 
 ## Color 
 <p style="color:red">Red Text Incoming!</p>
-{{red}}Red Text{{endcolor}}
+{{page.red}} Red Text {{page.endcolor}}
 
 or inline like this {{red}}Red Text{{endcolor}} correct?
