@@ -4,10 +4,10 @@ title:      Post Headline
 date:       2015-01-01 12:00:00
 author:     Materials Innovation
 
-red:<p style="color:red">
-blue:<p style="color:blue">
-green:<p style="color:green">
-endcolor:</p>
+red: <p style="color:red">
+blue: <p style="color:blue">
+green: <p style="color:green">
+endcolor: </p>
 ---
 <!-- Start Writing Below in Markdown -->
 
