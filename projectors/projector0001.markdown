@@ -1,5 +1,5 @@
 ---
 layout:     projector
-projectdata:       data.json
+projectdata:       http://ahmetcecen.github.io/data-projector/data.json
 ---
 
