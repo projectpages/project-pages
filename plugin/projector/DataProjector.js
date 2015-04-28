@@ -1610,9 +1610,9 @@ Storage = (function(_super) {
     return this.requestDatafile();
   };
 
-  //Storage.prototype.requestDatafile = function() {
-  //  return this.onDatafile("http://ahmetcecen.github.io/data-projector/dataexample.json");
-  //};
+  Storage.prototype.requestDatafile = function() {
+    return this.onDatafile("{{ post.dataset }}");
+  };
 
   Storage.prototype.requestJSON = function(datafile) {
     var file;
