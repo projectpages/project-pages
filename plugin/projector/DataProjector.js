@@ -1611,7 +1611,7 @@ Storage = (function(_super) {
   };
 
   Storage.prototype.requestDatafile = function() {
-    return this.onDatafile("data.json");
+    return this.onDatafile("http://ahmetcecen.github.io/data-projector/dataexample.json");
   };
 
   Storage.prototype.requestJSON = function(datafile) {
