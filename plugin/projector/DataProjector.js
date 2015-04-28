@@ -1611,7 +1611,7 @@ Storage = (function(_super) {
   };
 
   Storage.prototype.requestDatafile = function() {
-    return this.onDatafile("{{ page.projectdata }}");
+    return this.onDatafile("data.json");
   };
 
   Storage.prototype.requestJSON = function(datafile) {
