@@ -1,8 +1,9 @@
 ---
 layout:     projector
-title:      Try Projector
+title:      Try STL
 date:       2015-04-29 12:00:00
 author:     Ahmet Cecen
-
-dataset:    http://ahmetcecen.github.io/data-projector/data.json
 ---
+
+<script src="https://embed.github.com/view/3d/ahmetcecen/project-pages/gh-pages/img/stl/MPL.stl"></script>
+
