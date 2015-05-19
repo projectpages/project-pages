@@ -1,5 +1,5 @@
 ---
-layout:     projector
+layout:     post
 title:      Try STL
 date:       2015-04-29 12:00:00
 author:     Ahmet Cecen
