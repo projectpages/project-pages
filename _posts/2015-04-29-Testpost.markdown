@@ -5,5 +5,7 @@ date:       2015-04-29 12:00:00
 author:     Ahmet Cecen
 ---
 
-<script src="https://embed.github.com/view/3d/ahmetcecen/project-pages/gh-pages/img/stl/MPL.stl"></script>
+I like talking about stuff and I am writing blah and blah, then I decide to mention a dataset, and I want to visualize it, so I embed STL to this post.
+
+<div align="center"><script src="https://embed.github.com/view/3d/ahmetcecen/project-pages/gh-pages/img/stl/MPL.stl"></script></div>
 
