@@ -1,4 +1,4 @@
-/* Preload images */
+/* Preload images  */
 body:after {
   content: url(../img/close.png) url(../img/loading.gif) url(../img/prev.png) url(../img/next.png);
   display: none;
