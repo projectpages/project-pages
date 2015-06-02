@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script type="text/javascript">
+        //x, y, z values of the data points
+        //notice the length of x_val, y_val, z_val, img must be the same
+        var x_val = [1,2,3,4,2.9];
+        var y_val = [1.2,1.4,3,1.8,5];
+        var z_val = [3.3,5,3.9,7,4.5];
+        var img_url = ['img1.png','img2.png','img3.png','img4.png','img5.png'];
+        
+        //get the range of the axis
+        var max_val = [];
+        max_val.push(Math.max(...x_val));
+        max_val.push(Math.max(...y_val));
+        max_val.push(Math.max(...z_val));
+        var domain_range = [0, Math.max(...max_val)];
+
+        //set the data point size and color
+        var sphereRadius = 0.4;
+        var sphereColor = 'yellow';
+    </script>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A Collaborative Research Blog Tool">
+
+    <title>Post Headline - Project Pages</title>
+
+    <link rel="canonical" href="http://materialsinnovation.github.io/project-pages/2015/01/01/New-Post/">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/project-pages/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/project-pages/css/clean-blog.css">
+
+    <!-- Pygments Github CSS -->
+    <link rel="stylesheet" href="/project-pages/css/syntax.css">
+
+    <!-- x3dom CSS -->
+    <link rel="stylesheet" href="/project-pages/css/x3dom-full.css">
+
+    <!-- Custom Fonts -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	<!-- Math Jax -->
+	<script type="text/x-mathjax-config">
+	MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+	</script>
+	<script type="text/javascript"
+	src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+	</script>
+	<script type="text/x-mathjax-config">
+	MathJax.Hub.Config({
+		TeX: { equationNumbers: { autoNumber: "AMS" } }
+	});
+	</script>
+
+	<!--<script src="http://cdnjs.cloudflare.com/ajax/libs/d3/3.4.13/d3.min.js" type="text/javascript"></script>-->
+
+	<script>
+	$( document ).ready(function() {
+		$('.post img').each( function(d,i){
+			$(this)
+				.wrap( '<a href="' + $(this).attr("src") +
+					'" data-title="'+$(this).attr("alt")+'" data-lightbox="post-img"></a>')
+			});
+	});
+	</script>
+</head>
+
+
+<body>
+
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/project-pages/">Project Pages</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="/project-pages/">Home</a>
+                </li>
+                
+                <li>
+                    <a href="/project-pages/about/">About</a>
+                </li>
+                
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+
+    <!-- Post Header -->
+<header class="intro-header" style="background-image: url('/project-pages/img/home-bg.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <h1>Post Headline</h1>
+                    
+                    <span class="meta">Posted by Materials Innovation on January 1, 2015</span>	
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <h1>A demo of the 3d plot</h1>
+                <div id="divPlot"></div>
+
+				<!-- Start Writing Below in Markdown -->
+
+
+                <ul class="pager">
+                    
+                    
+                    <li class="next">
+                        <a href="/project-pages/2015/01/01/New-Slide/" data-toggle="tooltip" data-placement="top" title="Presentation Headline">Next Post &rarr;</a>
+                    </li>
+                    
+                </ul>
+
+            </div>
+        </div>
+		<section>
+            <div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'projectpages'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+        </section>
+    </div>
+</article>
+
+<hr>
+
+	
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    <li>
+                        <a href="/project-pages/feed.xml">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    <li>
+                        <a href="https://github.com/materialsinnovation/project-pages">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                </ul>
+                <p class="copyright text-muted">Copyright &copy; Project Pages 2015</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/project-pages/js/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/project-pages/js/bootstrap.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/project-pages/js/clean-blog.min.js"></script>
+
+<!-- D3 JavaScript -->
+<script src="/project-pages/js/d3.v3.min.js"></script>
+
+<!-- x3dom JavaScript -->
+<script src="/project-pages/js/x3dom-full.js"></script>
+
+<script type="text/javascript">
+    // Create a 3d scatter plot within d3 selection parent.
+    function scatterPlot3d( parent )
+    {
+      var x3d = parent  
+        .append("x3d")
+          .style( "width", parseInt(parent.style("width"))+"px" )
+          .style( "height", parseInt(parent.style("height"))+"px" )
+          .style( "border", "none" )
+          
+      var scene = x3d.append("scene")
+
+      scene.append("orthoviewpoint")
+         .attr( "centerOfRotation", [5, 5, 5])
+         .attr( "fieldOfView", [-5, -5, 15, 15])
+         .attr( "orientation", [-0.5, 1, 0.2, 1.12*Math.PI/4])
+         .attr( "position", [8, 4, 15])
+
+      var rows = initializeDataGrid();
+      var axisRange = [0, 10];
+      var scales = [];
+      var initialDuration = 0;
+      var defaultDuration = 800;
+      var ease = 'linear';
+      var time = 0;
+      var axisKeys = ["x", "y", "z"]
+
+      // Helper functions for initializeAxis() and drawAxis()
+      function axisName( name, axisIndex ) {
+        return ['x','y','z'][axisIndex] + name;
+      }
+
+      function constVecWithAxisValue( otherValue, axisValue, axisIndex ) {
+        var result = [otherValue, otherValue, otherValue];
+        result[axisIndex] = axisValue;
+        return result;
+      }
+
+      // Used to make 2d elements visible
+      function makeSolid(selection, color) {
+        selection.append("appearance")
+          .append("material")
+             .attr("diffuseColor", color||"black")
+        return selection;
+      }
+
+      // Initialize the axes lines and labels.
+      function initializePlot() {
+        initializeAxis(0);
+        initializeAxis(1);
+        initializeAxis(2);
+      }
+
+      function initializeAxis( axisIndex )
+      {
+        var key = axisKeys[axisIndex];
+        drawAxis( axisIndex, key, initialDuration );
+
+        var scaleMin = axisRange[0];
+        var scaleMax = axisRange[1];
+
+        // the axis line
+        var newAxisLine = scene.append("transform")
+             .attr("class", axisName("Axis", axisIndex))
+             .attr("rotation", ([[0,0,0,0],[0,0,1,Math.PI/2],[0,1,0,-Math.PI/2]][axisIndex]))
+          .append("shape")
+        newAxisLine
+          .append("appearance")
+          .append("material")
+            .attr("emissiveColor", "lightgray")
+        newAxisLine
+          .append("polyline2d")
+             // Line drawn along y axis does not render in Firefox, so draw one
+             // along the x axis instead and rotate it (above).
+            .attr("lineSegments", "0 0," + scaleMax + " 0")
+
+       // axis labels
+       var newAxisLabel = scene.append("transform")
+           .attr("class", axisName("AxisLabel", axisIndex))
+           .attr("translation", constVecWithAxisValue( 0, scaleMin + 1.1 * (scaleMax-scaleMin), axisIndex ))
+
+       var newAxisLabelShape = newAxisLabel
+         .append("billboard")
+           .attr("axisOfRotation", "0 0 0") // face viewer
+         .append("shape")
+         .call(makeSolid)
+
+       var labelFontSize = 0.6;
+
+       newAxisLabelShape
+         .append("text")
+           .attr("class", axisName("AxisLabelText", axisIndex))
+           .attr("solid", "true")
+           .attr("string", key)
+        .append("fontstyle")
+           .attr("size", labelFontSize)
+           .attr("family", "SANS")
+           .attr("justify", "END MIDDLE" )
+      }
+
+      // Assign key to axis, creating or updating its ticks, grid lines, and labels.
+      function drawAxis( axisIndex, key, duration ) {
+
+        var scale = d3.scale.linear()
+          .domain(domain_range) // demo data range
+          .range( axisRange )
+        
+        scales[axisIndex] = scale;
+
+        var numTicks = 8;
+        var tickSize = 0.1;
+        var tickFontSize = 0.5;
+
+        // ticks along each axis
+        var ticks = scene.selectAll( "."+axisName("Tick", axisIndex) )
+           .data( scale.ticks( numTicks ));
+        var newTicks = ticks.enter()
+          .append("transform")
+            .attr("class", axisName("Tick", axisIndex));
+        newTicks.append("shape").call(makeSolid)
+          .append("box")
+            .attr("size", tickSize + " " + tickSize + " " + tickSize);
+        // enter + update
+        ticks.transition().duration(duration)
+          .attr("translation", function(tick) { 
+             return constVecWithAxisValue( 0, scale(tick), axisIndex ); })
+        ticks.exit().remove();
+
+        // tick labels
+        var tickLabels = ticks.selectAll("billboard shape text")
+          .data(function(d) { return [d]; });
+        var newTickLabels = tickLabels.enter()
+          .append("billboard")
+             .attr("axisOfRotation", "0 0 0")     
+          .append("shape")
+          .call(makeSolid)
+        newTickLabels.append("text")
+          .attr("string", scale.tickFormat(10))
+          .attr("solid", "true")
+          .append("fontstyle")
+            .attr("size", tickFontSize)
+            .attr("family", "SANS")
+            .attr("justify", "END MIDDLE" );
+        tickLabels // enter + update
+          .attr("string", scale.tickFormat(10))
+        tickLabels.exit().remove();
+
+        // base grid lines
+        if (axisIndex==0 || axisIndex==2) {
+
+          var gridLines = scene.selectAll( "."+axisName("GridLine", axisIndex))
+             .data(scale.ticks( numTicks ));
+          gridLines.exit().remove();
+          
+          var newGridLines = gridLines.enter()
+            .append("transform")
+              .attr("class", axisName("GridLine", axisIndex))
+              .attr("rotation", axisIndex==0 ? [0,1,0, -Math.PI/2] : [0,0,0,0])
+            .append("shape")
+
+          newGridLines.append("appearance")
+            .append("material")
+              .attr("emissiveColor", "gray")
+          newGridLines.append("polyline2d");
+
+          gridLines.selectAll("shape polyline2d").transition().duration(duration)
+            .attr("lineSegments", "0 0, " + axisRange[1] + " 0")
+
+          gridLines.transition().duration(duration)
+             .attr("translation", axisIndex==0
+                ? function(d) { return scale(d) + " 0 0"; }
+                : function(d) { return "0 0 " + scale(d); }
+              )
+        }  
+      }
+
+      // Update the data points (spheres) and stems.
+      function plotData( duration ) {
+        
+        if (!rows) {
+         console.log("no rows to plot.")
+         return;
+        }
+
+        var x = scales[0], y = scales[1], z = scales[2];
+        
+
+        // Draw a sphere at each x,y,z coordinate.
+        var datapoints = scene.selectAll(".datapoint").data( rows );
+        datapoints.exit().remove()
+
+        var newDatapoints = datapoints.enter()
+          .append("transform")
+            .attr("class", "datapoint")
+            .attr("scale", [sphereRadius, sphereRadius, sphereRadius])
+          .append("shape");
+
+        newDatapoints
+          .append("appearance")
+          .append("material");
+        newDatapoints
+          .append("sphere")
+           // Does not work on Chrome; use transform instead
+           //.attr("radius", sphereRadius)
+
+        datapoints.selectAll("shape appearance material")
+            .attr("diffuseColor", sphereColor)
+
+        datapoints.transition().ease(ease).duration(duration)
+            .attr("translation", function(row) { 
+              return x(row[axisKeys[0]]) + " " + y(row[axisKeys[1]]) + " " + z(row[axisKeys[2]])})
+
+        // Draw a stem from the x-z plane to each sphere at elevation y.
+        // This convention was chosen to be consistent with x3d primitive ElevationGrid. 
+        // var stems = scene.selectAll(".stem").data( rows );
+        // stems.exit().remove();
+
+        // var newStems = stems.enter()
+        //   .append("transform")
+        //     .attr("class", "stem")
+        //   .append("shape");
+        // newStems
+        //   .append("appearance")
+        //   .append("material")
+        //     .attr("emissiveColor", "gray")
+        // newStems
+        //   .append("polyline2d")
+        //     .attr("lineSegments", function(row) { return "0 1, 0 0"; })
+
+        // stems.transition().ease(ease).duration(duration)
+        //     .attr("translation", 
+        //        function(row) { return x(row[axisKeys[0]]) + " 0 " + z(row[axisKeys[2]]); })
+        //     .attr("scale",
+        //        function(row) { return [1, y(row[axisKeys[1]])]; })
+      }
+
+      function initializeDataGrid() {
+        //Follow the convention where y(x,z) is elevation.
+        var rows = [];
+        // var x = [];
+        // var y =[];
+        // var z = [];
+        // d3.json("test.json", function(error, dat){
+        //   dat.forEach(function(d) {
+        //     d.x = +d.x;
+        //     d.y = +d.y;
+        //     d.z = +d.z;
+        //     x.push(d.x);
+        //     y.push(d.y);
+        //     z.push(d.z);
+        //   });
+
+         // for(var i=0; i<100;i++) {
+         //    rows.push({x:Math.random() * 5, y:Math.random() * 5, z:Math.random() * 5});
+         //  };
+        //});
+        
+        //console.log(rows);
+
+        for(var i = 0; i < x_val.length; i++) {
+            rows.push({'x': x_val[i], 'y': y_val[i], 'z': z_val[i], 'img': img_url[i]});
+        }
+
+
+        return rows;
+
+
+
+
+
+        // var rows = [];
+        // // Follow the convention where y(x,z) is elevation.
+        // for (var x=-5; x<=5; x++) {
+        //   for (var z=-5; z<=5; z++) {
+        //     rows.push({x: x, y: 0, z: z});
+        //  }
+        // }
+        // console.log(rows);
+        // return rows;
+      }
+
+      function updateData() {
+        time += Math.PI/8;
+        if ( x3d.node() && x3d.node().runtime ) {
+          for (var r=0; r<rows.length; ++r) {
+            var x = rows[r].x;
+            var z = rows[r].z;
+            rows[r].y = 5*( Math.sin(0.5*x + time) * Math.cos(0.25*z + time));
+          }
+          plotData( defaultDuration );
+        } else {
+          console.log('x3d not ready.');
+        }
+      }
+
+      initializeDataGrid();
+      initializePlot();
+      //setInterval( updateData, defaultDuration );
+      plotData(defaultDuration);
+
+      var tooltip = x3d.select("canvas")
+          .fillText("Hello World",10,50);
+          // .append("img")
+          // .style("position", "absolute")
+          // .style("z-index", "10000")
+          // .style("visibility", "hidden")
+          // .style("width", "100px")
+          // .style("height", "100px");
+
+    // scene.selectAll(".datapoint").data(rows)
+    //   .enter()
+    //   .on("mouseover", function(d){return tooltip.style("visibility", "visible")
+    //           .attr("src", "http://sdk.gooddata.com/gooddata-js/images/posts/chord-chart.png");})
+    //       .on("mousemove", function(){return tooltip.style("top",
+    //           (d3.event.pageY-10)+"px").style("left",(d3.event.pageX+10)+"px");})
+    //       .on("mouseout", function(){return tooltip.style("visibility", "hidden");});
+    };
+    
+    d3.select('html').style('height','100%').style('width','100%')
+    d3.select('body').style('height','100%').style('width','100%')
+    d3.select('#divPlot').style('width', "600px").style('height', "600px")
+    scatterPlot3d(d3.select('#divPlot'));
+
+</script>
+
+</body>
+
+</html>

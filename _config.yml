@@ -5,8 +5,8 @@ header-img: img/home-bg.jpg # Add a photo related to your project
 email: your-email@yourdomain.com #Update your email address
 description: "A Collaborative Research Blog Tool" # Update description of your project
 baseurl: "/project-pages" # Update to "/<name of your repository>"
-url: "http://materialsinnovation.github.io" # Update to "http://<github username>.github.io"
-github_username:  materialsinnovation # Update to your <github_username>
+url: "http://icodeyou.github.io" # Update to "http://<github username>.github.io"
+github_username:  icodeyou # Update to your <github_username>
 project_repository: project-pages # Update to your <repository name>
 
 # Build settings
