@@ -5,7 +5,7 @@
 
 	<script type="text/javascript">
 		var dataPointRadius = 5;
-		var dataPointColor = "teal"; 
+		var dataPointColor = "red"; 
 	</script>
     
 
@@ -298,7 +298,7 @@
 	      .attr("cy", function(d) { return y(d.y); })
 	      .style("fill", function(d) { return dataPointColor; })
 	      .on("mouseover", function(d){return tooltip.style("visibility", "visible")
-	      	.attr("src", "/project-pages/img/" + d.img);})
+	      	.attr("src", d.url);})
 			.on("mousemove", function(){return tooltip.style("top",
 			    (d3.event.pageY-480)+"px").style("left",(d3.event.pageX-240)+"px");})
 			.on("mouseout", function(){return tooltip.style("visibility", "hidden");});
