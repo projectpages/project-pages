@@ -2,10 +2,10 @@ import flickrapi
 import json
 
 #parameters
-api_key = '10269d23e23ee66e01e3f5ed5adb5b93'
-api_secret = 'a54c9aed907f84e8'
-user_id = '133344343@N08'
-photoset_id = '72157654544890436'
+api_key = ''
+api_secret = ''
+user_id = ''
+photoset_id = ''
 img_size = 't'
 img_file_format = 'jpg'
 file_name = 'data_test'
