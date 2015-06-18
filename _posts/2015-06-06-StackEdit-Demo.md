@@ -1,8 +1,8 @@
 ---
 # For All Layouts
 layout:     post
-title:      Post Headline
-date:       2015-01-01 12:00:00
+title:      Test StackEdit
+date:       2015-06-10 12:00:00
 author:     Materials Innovation
 
 #  For Presentation Layout
