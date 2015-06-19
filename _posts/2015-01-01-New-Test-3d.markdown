@@ -1,0 +1,13 @@
+---
+layout: post3dplot
+author: eric wang
+date: June 17, 2015
+firstPC: [1,2,3,4,2.9]
+secondPC: [1.2,1.4,3,1.8,5]
+thirdPC: [3.3,5,3.9,7,4.5]
+imageList: ['img1.png','img2.png','img3.png','img4.png','img5.png']
+dataPointColor: red
+dataPointRadius: 0.5
+---
+
+{% include canvas.html %}

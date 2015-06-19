@@ -1,0 +1,170 @@
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    <li>
+                        <a href="{{ "/feed.xml" | prepend: site.baseurl }}">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    {% if site.twitter_username %}
+                    <li>
+                        <a href="https://twitter.com/{{ site.twitter_username }}">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    {% endif %}
+                    {% if site.facebook_username %}
+                    <li>
+                        <a href="https://www.facebook.com/{{ site.facebook_username }}">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    {% endif %}
+                    {% if site.github_username %}
+                    <li>
+                        <a href="https://github.com/{{ site.github_username }}/{{ site.project_repository}}">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    {% endif %}
+                </ul>
+                <p class="copyright text-muted">Copyright &copy; {{ site.title }} {{ site.time | date: '%Y' }}</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="{{ "/js/jquery.min.js" | prepend: site.baseurl }}"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="{{ "/js/bootstrap.min.js" | prepend: site.baseurl }}"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="{{ "/js/clean-blog.min.js" | prepend: site.baseurl }}"></script>
+
+<!-- D3 JavaScript -->
+<script src="{{ "/js/d3.v3.min.js" | prepend: site.baseurl }}"></script>
+
+<script type="text/javascript">
+    var margin = {top: 20, right: 20, bottom: 30, left: 40},
+    width = {{ page.scaleWidth }} - margin.left - margin.right,
+    height = {{ page.scaleHeight }} - margin.top - margin.bottom;
+
+    var x = d3.scale.linear()
+        .range([0, width]);
+
+    var y = d3.scale.linear()
+        .range([height, 0]);
+
+    var color = d3.scale.category10();
+
+    var xAxis = d3.svg.axis()
+        .scale(x)
+        .orient("bottom");
+
+    var yAxis = d3.svg.axis()
+        .scale(y)
+        .orient("left");
+
+    var svg = d3.select("#divPlot").append("svg")
+        .attr("width", width + margin.left + margin.right)
+        .attr("height", height + margin.top + margin.bottom)
+      .append("g")
+        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+    d3.json("{{ "/json/data.json" | prepend: site.baseurl }}", function(error, data) {
+      data.forEach(function(d) {
+        d.x = +d.x;
+        d.y = +d.y;
+      });
+
+      //x.domain(d3.extent(data, function(d) { return d.sepalWidth; })).nice();
+      //y.domain(d3.extent(data, function(d) { return d.sepalLength; })).nice();
+      y.domain([0, d3.max(data, function(d) { return d.y; })]).nice();
+      x.domain([0, d3.max(data, function(d) { return d.x; })]).nice();
+
+      svg.append("g")
+          .attr("class", "x axis")
+          .attr("transform", "translate(0," + height + ")")
+          .call(xAxis)
+        .append("text")
+          .attr("class", "label")
+          .attr("x", width)
+          .attr("y", -6)
+          .style("text-anchor", "end")
+          .text("x");
+
+      svg.append("g")
+          .attr("class", "y axis")
+          .call(yAxis)
+        .append("text")
+          .attr("class", "label")
+          .attr("transform", "rotate(-90)")
+          .attr("y", 6)
+          .attr("dy", ".71em")
+          .style("text-anchor", "end")
+          .text("y")
+
+      svg.selectAll(".axis")
+          .style("fill", "none")
+          .style("stroke", "#000")
+          .style("shape-rendering", "crispEdges")
+
+      var tooltip = d3.select("#divPlot")
+        .append("img")
+        .style("position", "absolute")
+        .style("z-index", "10")
+        .style("visibility", "hidden")
+
+      svg.selectAll(".dot")
+          .data(data)
+        .enter().append("circle")
+          .attr("class", "dot")
+          .attr("r", "{{ page.dataPointRadius }}")
+          .attr("cx", function(d) { return x(d.x); })
+          .attr("cy", function(d) { return y(d.y); })
+          .style("fill", function(d) { return "{{ page.dataPointColor }}"; })
+          .style("stroke", "#fff")
+          .on("mouseover", function(d){return tooltip.style("visibility", "visible")
+            .attr("src", d.url);})
+            .on("mousemove", function(){return tooltip.style("top",
+                (d3.event.pageY-480)+"px").style("left",(d3.event.pageX-240)+"px");})
+            .on("mouseout", function(){return tooltip.style("visibility", "hidden");});
+
+      // var legend = svg.selectAll(".legend")
+      //     .data(color.domain())
+      //   .enter().append("g")
+      //     .attr("class", "legend")
+      //     .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
+
+      // legend.append("rect")
+      //     .attr("x", width - 18)
+      //     .attr("width", 18)
+      //     .attr("height", 18)
+      //     .style("fill", color);
+
+      // legend.append("text")
+      //     .attr("x", width - 24)
+      //     .attr("y", 9)
+      //     .attr("dy", ".35em")
+      //     .style("text-anchor", "end")
+      //     .text(function(d) { return d; });
+
+    });
+</script>
