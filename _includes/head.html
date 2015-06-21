@@ -51,12 +51,9 @@
 	<script src="{{ "/js/lightbox.min.js " | prepend: site.baseurl }}"></script>
 	
 	<script>
-	$( document ).ready(function() {
-		$('div.post img').each( function(d,i){
-			$(this)
-				.wrap( '<a href="' + $(this).attr("src") +
-					'" data-title="'+$(this).attr("alt")+'" data-lightbox="post-img"></a>')
-			});
+	jQuery(document).ready(function($){     
+		$('.lightbox').lightbox(); 
+		$('a:has(img)').addClass("lightbox"); 
 	});
 	</script>
 
