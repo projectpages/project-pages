@@ -47,7 +47,14 @@
     <!-- jQuery -->
 	<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
 	
-	<!-- Auto Wrap Lightbox -->
+	<!-- Add fancyBox -->
+	<link rel="stylesheet" href="{{ "/fancybox/jquery.fancybox.css?v=2.1.5" | prepend: site.baseurl }}" type="text/css" media="screen" />
+	<script type="text/javascript" src="{{ "/fancybox/jquery.fancybox.pack.js?v=2.1.5" | prepend: site.baseurl }}"> </script>
+	
+	<script>
+	$("a[href$='.jpg'],a[href$='.png'],a[href$='.gif']").attr('rel', 'gallery').fancybox();
+	</script>
+	
 	<script src="{{ "/js/lightbox.min.js " | prepend: site.baseurl }}"></script>
 	
 	<script>
@@ -58,7 +65,7 @@
 					'" data-title="'+$(this).attr("alt")+'" data-lightbox="post-img"></a>')
 			});
 	});
-	</script>
+	</script> -->
 
 	<!-- Bootstrap Core JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
