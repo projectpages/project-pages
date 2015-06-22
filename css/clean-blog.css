@@ -10,6 +10,17 @@ p {
 p a {
   text-decoration: underline;
 }
+
+p.red {
+  color: #FF0000;
+}
+
+img.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
 h1,
 h2,
 h3,
