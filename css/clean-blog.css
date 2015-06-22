@@ -19,11 +19,7 @@ p.red {
 img {
     max-width: 100%;
 	display:block;
-	margin-left: auto;
-	margin-right: auto;
-}
 
-.thumbnail {
 	position: absolute;
     top: 50%;
     left: 50%;
