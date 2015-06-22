@@ -13,7 +13,7 @@ This post contains some html that will work on your other posts by simply copy p
 
 <p align="center">This text is centered.</p>
 
-<p color="red">This is a red text with <p color="blue">blue</p> and <p color="green">green</p> inline text.</p>
+<p style="color:red">This is a red text with <span style="color:blue">blue</span> and <span style="color:green">green</span> inline text.</p>
 
 # Some Advanced Features
 
