@@ -15,54 +15,6 @@ p.red {
   color: #FF0000;
 }
 
-/*Ahmet Cecen additions.*/
-img {
-	display:block;
-	max-width:  100%;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-@media only screen and (min-width: 1000px) {
-img {
-	-moz-transition:-moz-transform 0.5s ease-in; 
-	-webkit-transition:-webkit-transform 0.5s ease-in; 
-	-o-transition:-o-transform 0.5s ease-in;
-}
-img:hover{
-	-moz-transform:scale(1.2); 
-	-webkit-transform:scale(1.2);
-	-o-transform:scale(1.2);
-}
-}
-
-@media only screen and (min-width: 1250px) {
-img {
-	-moz-transition:-moz-transform 0.5s ease-in; 
-	-webkit-transition:-webkit-transform 0.5s ease-in; 
-	-o-transition:-o-transform 0.5s ease-in;
-}
-img:hover{
-	-moz-transform:scale(1.5); 
-	-webkit-transform:scale(1.5);
-	-o-transform:scale(1.5);
-}
-}
-
-@media only screen and (min-width: 1500px) {
-img {
-	-moz-transition:-moz-transform 0.5s ease-in; 
-	-webkit-transition:-webkit-transform 0.5s ease-in; 
-	-o-transition:-o-transform 0.5s ease-in;
-}
-img:hover{
-	-moz-transform:scale(2); 
-	-webkit-transform:scale(2);
-	-o-transform:scale(2);
-}
-}
-/*End*/
-
 h1,
 h2,
 h3,
@@ -81,7 +33,6 @@ a:focus {
 }
 a img:hover,
 a img:focus {
-  cursor: zoom-in;
 }
 blockquote {
   color: #808080;
