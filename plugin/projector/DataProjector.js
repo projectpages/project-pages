@@ -1951,10 +1951,9 @@ Toolbar = (function(_super) {
   };
 
   Toolbar.prototype.setCameraButtonSelected = function(selected1, selected2, selected3) {
-    this.setButtonSelected("#perspectiveButton", selected1);
+    this.setButtonSelected("#dualButton", selected3);
     this.setButtonSelected("#orthographicButton", selected2);
-    return this.setButtonSelected("#dualButton", selected3);
-  };
+    return this.setButtonSelected("#perspectiveButton", selected1);
 
   Toolbar.prototype.blinkResetButton = function() {
     return this.blinkButton("#resetButton");
