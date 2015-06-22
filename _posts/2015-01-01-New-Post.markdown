@@ -102,4 +102,4 @@ Lets try entire block colored.{: .red}
 
 Also a centered image:
 
-![Description](http://img3.wikia.nocookie.net/__cb20140102180853/fairytail/images/5/5b/Logo_Fairy_Tail_right.png){: .image}
+![Description](http://img3.wikia.nocookie.net/__cb20140102180853/fairytail/images/5/5b/Logo_Fairy_Tail_right.png){: .zoom}
