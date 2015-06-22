@@ -1907,12 +1907,12 @@ Toolbar = (function(_super) {
 
   Toolbar.prototype.initialize = function() {
     this.setButtonSelected("#menuButton", true);
-    this.setButtonSelected("#infoButton", true);
-    this.setButtonSelected("#perspectiveButton", false);
+    this.setButtonSelected("#infoButton", false);
+    this.setButtonSelected("#perspectiveButton", true);
     this.setButtonSelected("#orthographicButton", false);
-    this.setButtonSelected("#dualButton", true);
+    this.setButtonSelected("#dualButton", false);
     this.setButtonSelected("#boxButton", true);
-    this.setButtonSelected("#viewportButton", true);
+    this.setButtonSelected("#viewportButton", false);
     this.setButtonSelected("#selectButton", false);
     this.setButtonSelected("#viewTopButton", true);
     this.setButtonSelected("#viewFrontButton", false);
