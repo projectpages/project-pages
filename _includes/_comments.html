@@ -1,11 +1,14 @@
 <script src="https://apis.google.com/js/plusone.js"></script>
 
 <style>
-div.g-comments {
+div
 @media screen and (min-width: 768px)
-width: 600%
+.g-comments {
+width: 600%;
+}
 @media screen and (max-width: 767px)
-width: 300%
+.g-comments {
+width: 300%;
 }
 </style>
 
@@ -13,11 +16,10 @@ width: 300%
 <table align="center">
 	<tr>
 		<td>
-			<div style="margin-left: 20%; margin-right: 20%; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; width: 500%; height: 600px;" class="g-comments"
+			<div style="margin-left: 20%; margin-right: 20%; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; height: 600px;" class="g-comments"
 				data-href="{{ page.url | prepend: site.baseurl | prepend: site.url  }}"
 				data-first_party_property="BLOGGER"
 				data-view_type="FILTERED_POSTMOD">
-			</div>
 			</div>
 		</td>
 	</tr>
