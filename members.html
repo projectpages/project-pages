@@ -1,0 +1,23 @@
+---
+layout: page
+title: "Members"
+description: "Collaborators working on this project."
+header-img: "img/home-bg.jpg"
+---
+{% for member in site.data.members %}
+
+	<img src="{{ member.img }}" style="float:left">
+	
+	# {{ member.name }}
+	## {{ member.role }}
+	
+	{% if member.github %} <span class="social-share-googleplus"><a href="https://github.com/{{ member.github }}" title="Github"><img src="/images/icons/github-icon.png" style="height:20px">Github</a></span>{% endif %}
+	{% if member.gplus %}<span class="social-share-googleplus"><a href="{{ member.gplus }}" title="Google Plus"><img src="/images/icons/gplus-icon.png" style="height:20px">Google Plus</a></span>{% endif %}
+	{% if member.url %}<span class="social-share-googleplus"><a href="{{ member.url }}" title="Google Plus"><img src="/images/icons/url-icon.png" style="height:20px">Website</a></span>{% endif %}
+
+	{% if member.bio %} 
+	{{ member.bio }}
+	{% endif %}
+
+{% endfor %}
+
