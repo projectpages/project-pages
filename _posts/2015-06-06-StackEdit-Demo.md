@@ -12,4 +12,4 @@ trans:		default # default/cube/page/concave/zoom/linear/fade/none
 
 Testing StackEdit
 
-<embed src="http://ahmetcecen.github.io/project-pages/2015/04/29/Try-Projector/" height="500px" width="800px">
+<embed src="http://ahmetcecen.github.io/project-pages/projectors/projector0001.md" height="500px" width="800px">

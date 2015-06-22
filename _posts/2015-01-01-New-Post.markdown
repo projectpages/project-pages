@@ -52,6 +52,8 @@ endcolor: </span>
 
 #Images:
 
+Hover your pointer over the image to expand the view.
+
 [![Description](http://img3.wikia.nocookie.net/__cb20140102180853/fairytail/images/5/5b/Logo_Fairy_Tail_right.png)](https://www.google.com)
 
 #Code:
@@ -85,21 +87,10 @@ column  | short | B | C
 
 ---
 
-#HTML
+# HTML
 
 Can write the whole post or sections in HTML for very specific needs. [For the advanced user or the code savvy.]
 
-# Experimental Features 
+# Customized and Advanced Functionality
 
-## Color 
-<span style="color:red">Red Text Incoming!</span>
-
-{{page.red}} Red Text {{page.endcolor}}
-
-or inline like this {{page.blue}}Red Text{{page.endcolor}} correct?
-
-Lets try entire block colored.{: .red}
-
-Also a centered image:
-
-![Description](http://img3.wikia.nocookie.net/__cb20140102180853/fairytail/images/5/5b/Logo_Fairy_Tail_right.png){: .zoom}
+Head over to the [documentation page](http://matin-hub.github.io/ppguide/) for tutorials on some basic html formatting and some extensions you can use for cool stuff like interactive 3D visualizations.
