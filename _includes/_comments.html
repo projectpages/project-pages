@@ -1,9 +1,20 @@
 <script src="https://apis.google.com/js/plusone.js"></script>
 
+<style>
+div#___comments_0 {
+width: 700px !important;
+}
+@media only screen and (max-width: 767px){
+	#___comments_0 {
+	width: 300px !important;
+	}
+}
+</style>
+
 <table align="center">
 	<tr>
 		<td>
-			<div style="margin-left: 20%; margin-right: 20%; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; height: 600px; width: inherit;" class="g-comments"
+			<div style="margin-left: 20%; margin-right: 20%; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; height: 600px;" class="g-comments"
 				data-href="{{ page.url | prepend: site.baseurl | prepend: site.url  }}"
 				data-first_party_property="BLOGGER"
 				data-view_type="FILTERED_POSTMOD">
@@ -11,14 +22,3 @@
 		</td>
 	</tr>
 </table>
-
-<style>
-div#___comments_0 {
-width: 700px;
-}
-@media only screen and (max-width: 767px){
-	#___comments_0 {
-	width: 300px;
-	}
-}
-</style>
