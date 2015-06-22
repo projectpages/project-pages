@@ -1,53 +1,71 @@
-<!-- Footer -->
-<footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <ul class="list-inline text-center">
-                    <li>
-                        <a href="/project-pages/feed.xml">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li>
-                    
-                    
-                    
-                    <li>
-                        <a href="https://github.com/materialsinnovation/project-pages">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li>
-                    
-                </ul>
-                <p class="copyright text-muted">Copyright &copy; Project Pages 2015</p>
-            </div>
-        </div>
-    </div>
-</footer>
+---
+layout: "post3dplot"
+author: "Eric Wang"
+date: "June 22, 2015"
+jsonFileName: "data3d.json"
+dataPointColor: "red"
+dataPointRadius: 0.2
+---
+#A 3d plot
+{% include canvas.html %}
 
-<!-- jQuery -->
-<script src="{{ "/js/jquery.min.js" | prepend: site.baseurl }}"></script>
+#Generate the JSON file
+{% highlight python %}
+import flickrapi
+import json
 
-<!-- Bootstrap Core JavaScript -->
-<script src="{{ "/js/bootstrap.js" | prepend: site.baseurl }}"></script>
+#helper function to generate the json file
+def generate3dJson(api_key, api_secret, user_id, photoset_id, img_size, img_file_format, first_pc_list, second_pc_list, third_pc_list, img_title_list, file_name):
+	#configure api and get photos
+	flickr = flickrapi.FlickrAPI(api_key, api_secret, format='parsed-json')
+	photos = flickr.photosets.getPhotos(api_key=api_key, photoset_id=photoset_id, user_id=user_id)
+	#create img title, img url dict
+	url_dict = {}
+	for item in photos['photoset']['photo']:
+		url = 'http://farm'+str(item['farm'])+'.staticflickr.com/'+str(item['server'])+'/'+str(item['id'])+'_'+item['secret']+'_'+img_size+'.'+img_file_format
+		url_dict.update({item['title']: url})
+	#data list to output as json file
+	dt_list = []
+	keys = ['x', 'y', 'z', 'title']
+	for item in zip(first_pc_list, second_pc_list, third_pc_list, img_title_list):
+		item_dict = dict(zip(keys, item))
+		item_dict.update({'url': url_dict[item_dict['title']]})
+		dt_list.append(item_dict)
+	#dump json file
+	with open('../json/'+file_name+'.json', 'w') as output:
+		json.dump(dt_list, output)
+{% endhighlight %}
 
-<!-- Custom Theme JavaScript -->
-<script src="{{ "/js/clean-blog.min.js" | prepend: site.baseurl }}"></script>
+#Run a test by calling the helper function
+{% highlight python %}
+import numpy as np
+from generate3dJson import generate3dJson
 
-<!-- D3 JavaScript -->
-<script src="{{ "/js/d3.v3.min.js" | prepend: site.baseurl }}"></script>
+#parameters
+api_key = ''
+api_secret = ''
+user_id = '133344343@N08'
+photoset_id = '72157654544890436'
+img_size = 't'
+img_file_format = 'jpg'
+file_name = 'data3d'
 
-<!-- x3dom JavaScript -->
-<script src="{{ "/js/x3dom-full.js" | prepend: site.baseurl }}"></script>
+# generate random data points ranging from 0 to 10
+x = np.random.random(100) * 10
+y = np.random.random(100) * 10
+z = np.random.random(100) * 10
+# image titles must match those on flickr
+img_title_list = []
+for i in xrange(1,101):
+	title = 'img' + str(i)
+	img_title_list.append(title)
 
-<script type="text/javascript">
-    //x, y, z values of the data points
+generate3dJson(api_key, api_secret, user_id, photoset_id, img_size, img_file_format, x, y, z, img_title_list, file_name)
+{% endhighlight %}
+
+#d3 code
+{% highlight javascript %}
+//x, y, z values of the data points
     //notice the length of x_val, y_val, z_val, img must be the same
     var x_val = [];
     var y_val = [];
@@ -399,6 +417,5 @@
     d3.select('html').style('height','100%').style('width','100%')
     d3.select('body').style('height','100%').style('width','100%')
     d3.select('#divPlot').style('width', "600px").style('height', "600px")
-    scatterPlot3d(d3.select('#divPlot'));    
-
-</script>
+    scatterPlot3d(d3.select('#divPlot')); 
+{% endhighlight %}
