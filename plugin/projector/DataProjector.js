@@ -586,7 +586,7 @@ Projector = (function(_super) {
 
   Projector.prototype.viewport = null;
 
-  Projector.prototype.direction = Utility.DIRECTION.TOP;
+  Projector.prototype.direction = null;
 
   Projector.prototype.view1 = null;
 
