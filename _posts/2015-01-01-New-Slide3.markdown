@@ -4,13 +4,13 @@ title:     		Presentation 3 Headline
 date:      	2015-06-23 03:00 
 author:     	Materials Innovation
 
-theme:		moon # default/beige/blood/moon/night/serif/simple/sky/solarized
+theme:		night # default/beige/blood/moon/night/serif/simple/sky/solarized
 trans:		default # default/cube/page/concave/zoom/linear/fade/none
 
-horizontal:	</section></section><section markdown="1" data-background=""><section markdown="1">
+horizontal:	</section></section><section markdown="1" data-background="http://ahmetcecen.github.io/project-pages/img/slidebackground.png"><section markdown="1">
 vertical:		</section><section markdown="1">
 ---
-<section markdown="1" data-background="http://ahmetcecen.github.io/images/csebackground.png"><section markdown="1">
+<section markdown="1" data-background="http://ahmetcecen.github.io/project-pages/img/slidebackground.png"><section markdown="1">
 ## {{ page.title }}
 
 <hr>
