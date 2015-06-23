@@ -15,7 +15,7 @@ description: "A Collaborative Research Blog Tool"
         {% endif %}
     </a>
     <p class="post-meta">Posted by {{ post.author }} on {{ post.date | date: "%B %-d, %Y" }}</p>
-	<p><img src="{{ /img/icons/resulttag.png | prepend: site.baseurl }}"></p>
+	<p>{% if post.tags contains 'result' %}<img src="{{ "/img/icons/resulttag.png" | prepend: site.baseurl }} height="20px">{% endif %}</p>
 </div>
 <hr>
 {% endfor %}
