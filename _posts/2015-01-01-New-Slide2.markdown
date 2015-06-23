@@ -1,0 +1,65 @@
+---
+layout:     slide2
+title:      Presentation 2 Headline
+date:       2015-01-01 12:00:00
+author:     Materials Innovation
+
+theme:		blood # default/beige/blood/moon/night/serif/simple/sky/solarized
+trans:		default # default/cube/page/concave/zoom/linear/fade/none
+
+temp: <section data-markdown><script type="text/template">
+---
+{% assign h-slide = {{ page.temp }} %}
+{% assign h-slide-end = </script></section>"%}
+
+<section>
+	<h1>Reveal.js</h1>
+	<h3>The HTML Presentation Framework</h3>
+	<p>
+		<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
+	</p>
+</section>
+
+<section markdown="1">
+<section markdown="1">
+##Hello There
+
+<h2>Vertical Slides</h2>
+
+*Style*
+	
+![Description](http://img3.wikia.nocookie.net/__cb20140102180853/fairytail/images/5/5b/Logo_Fairy_Tail_right.png)
+	
+This section is in markdown!
+</section>
+<section markdown="1">
+*Style*
+</section>
+</section>
+
+<!-- Example of nested vertical slides -->
+<section>
+	<section>
+		<h2>Vertical Slides</h2>
+		<p>Slides can be nested inside of each other.</p>
+		<p>Use the <em>Space</em> key to navigate through all slides.</p>
+		<br>
+		<a href="#" class="navigate-down">
+			<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+		</a>
+	</section>
+	<section>
+		<h2>Basement Level 1</h2>
+		<p>Nested slides are useful for adding additional detail underneath a high level horizontal slide.</p>
+	</section>
+	<section>
+		<h2>Basement Level 2</h2>
+		<p>That's it, time to go back up.</p>
+		<br>
+		<a href="#/2">
+			<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="transform: rotate(180deg); -webkit-transform: rotate(180deg);">
+		</a>
+	</section>
+</section>
+
+

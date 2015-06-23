@@ -1,0 +1,49 @@
+---
+layout:     	slide2
+title:     		Presentation 3 Headline
+date:      	2015-06-23 03:00 
+author:     	Materials Innovation
+
+theme:		moon # default/beige/blood/moon/night/serif/simple/sky/solarized
+trans:		default # default/cube/page/concave/zoom/linear/fade/none
+
+horizontal:	</section></section><section markdown="1" data-background=""><section markdown="1">
+vertical:		</section><section markdown="1">
+---
+<section markdown="1" data-background="http://ahmetcecen.github.io/images/csebackground.png"><section markdown="1">
+## {{ page.title }}
+
+<hr>
+
+#### {{ page.author }}
+
+#### {{ page.date | | date: "%I %M %p ,%a, %b %d %Y"}}
+
+{{ page.horizontal }}
+<!-- Start Writing Below in Markdown -->
+
+# 1
+
+{{ page.horizontal }}
+# 1
+
+{{ page.vertical }}
+# 1
+
+{{ page.vertical }}
+# 1
+
+{{ page.horizontal }}
+# 1
+
+{{ page.horizontal }}
+# 1
+
+<!-- End Here -->
+{{ page.horizontal }}
+
+#[Print]({{ site.url }}{{ site.baseurl }}{{ page.url }}/?print-pdf#)
+
+#[Back]({{ site.url }}{{ site.baseurl }})
+
+</section></section>
