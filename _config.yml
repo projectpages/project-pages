@@ -8,7 +8,6 @@ baseurl: "/project-pages"
 url: "http://matinhub.github.io"
 github_username:  matinhub
 project_repository: project-pages
->>>>>>> ahmetcecen/merge
 
 # Build settings
 # Don't change these variables
