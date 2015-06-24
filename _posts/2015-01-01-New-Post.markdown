@@ -3,12 +3,20 @@ layout:     post
 title:      Post Headline
 date:       2015-01-01 12:00:00
 author:     Materials Innovation
+json:       Hello world!
+
+red: <span style="color:red">
+blue: <span style="color:blue">
+green: <span style="color:green">
+endcolor: </span>
 ---
 <!-- Start Writing Below in Markdown -->
 
 #Headers:
 
 # Header 1
+
+{{page.json}}
 
 ## Header 2
 
@@ -47,6 +55,8 @@ author:     Materials Innovation
 
 #Images:
 
+Hover your pointer over the image to expand the view.
+
 ![Description](http://img3.wikia.nocookie.net/__cb20140102180853/fairytail/images/5/5b/Logo_Fairy_Tail_right.png)
 
 #Code:
@@ -80,7 +90,10 @@ column  | short | B | C
 
 ---
 
-#HTML
+# HTML
 
 Can write the whole post or sections in HTML for very specific needs. [For the advanced user or the code savvy.]
 
+# Customized and Advanced Functionality
+
+Head over to the [documentation page](http://matin-hub.github.io/ppguide/) for tutorials on some basic html formatting and some extensions you can use for cool stuff like interactive 3D visualizations.

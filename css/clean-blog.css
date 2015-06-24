@@ -10,6 +10,11 @@ p {
 p a {
   text-decoration: underline;
 }
+
+p.red {
+  color: #FF0000;
+}
+
 h1,
 h2,
 h3,
@@ -28,7 +33,6 @@ a:focus {
 }
 a img:hover,
 a img:focus {
-  cursor: zoom-in;
 }
 blockquote {
   color: #808080;
