@@ -92,7 +92,7 @@ def _set_colors():
 --horizontal
 #HTML
 
-You actually can not write in HTML using this template. If you want to create HTML presentations using this framework head over to [reveal.js](http://lab.hakim.se/reveal-js/#/).
+You actually can not write in HTML using this template. If you want to create HTML presentations using this framework head over to [reveal.js](http://lab.hakim.se/reveal-js/#/).  For a power-point like interactive tool for creating presentations with this theme, check [slides.com](http://slides.com/).
 
 <!-- End Here -->
 --vertical
