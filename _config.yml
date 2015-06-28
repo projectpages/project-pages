@@ -1,11 +1,12 @@
 # Site settings
+
 title: Project Pages
 header-img: img/home-bg.jpg
 email: your-email@yourdomain.com
 description: "Write your site description here. It will be used as your sites meta description as well!"
 baseurl: "/project-pages"
-url: "http://matin-hub.github.io"
-github_username:  materialsinnovation
+url: "http://matinhub.github.io"
+github_username:  matinhub
 project_repository: project-pages
 
 # Build settings
