@@ -13,7 +13,8 @@ layout: page
         </h3>
         {% endif %}
     </a>
-    <p class="post-meta">Posted by {{ post.author }} on {{ post.date | date: "%B %-d, %Y" }}</p>
+    <p class="post-meta" style="margin-bottom:5px">Posted by {{ post.author }} on {{ post.date | date: "%B %-d, %Y" }}</p>
+	{% if post.tags contains 'result' %}<img src="{{ "/img/icons/resulttag.png " | prepend: site.baseurl }}" height="30px" style="margin-top: 5px;margin-right: 5px">{% endif %}
 </div>
 <hr>
 {% endfor %}

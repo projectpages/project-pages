@@ -27,25 +27,26 @@
 				document.getElementsByTagName( 'head' )[0].appendChild( link );
 			}
 		</script>
-
+			
 		<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
+		
+		<!-- Pygments Github CSS -->
+		<link rel="stylesheet" href="{{ "/css/syntax.css" | prepend: site.baseurl }}">
+
 	</head>
 
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<!-- Use external markdown resource, separate slides by three newlines; vertical slides by two newlines ^\n##\s -->
-				<section data-markdown data-separator="^--horizontal" data-vertical="^--vertical" data-notes="^--notes">
-					{{ content }}
-				</section>
+{{ content }}
 			</div>
 		</div>
-
-		<script src="{{"/lib/js/head.min.js" | prepend: site.baseurl}}"></script>
-		<script src="{{"/js/reveal.min.js" | prepend: site.baseurl}}"></script>
-
+		
+		<script src="{{"/lib/js/head.min.js " | prepend: site.baseurl}}"> </script>
+		<script src="{{"/js/reveal.min.js " | prepend: site.baseurl}}"></script>
+	
 		<script>
 
 			// Full list of configuration options available here:
@@ -71,7 +72,7 @@
 					{ src: '{{"/plugin/highlight/highlight.js" | prepend: site.baseurl}}', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
 					{ src: '{{"/plugin/zoom-js/zoom.js" | prepend: site.baseurl}}', async: true, condition: function() { return !!document.body.classList; } },
 					{ src: '{{"/plugin/notes/notes.js" | prepend: site.baseurl}}', async: true, condition: function() { return !!document.body.classList; } },
-        				{ src: '{{"/plugin/math/math.js" | prepend: site.baseurl}}', async: true }
+        			{ src: '{{"/plugin/math/math.js" | prepend: site.baseurl}}', async: true }
 				]
 			});
 
