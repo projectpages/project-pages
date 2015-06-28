@@ -105,10 +105,10 @@ Head over to the [documentation page](http://matin-hub.github.io/ppguide/) for t
 
 ## Data Projector
 
-<embed src="http://ahmetcecen.github.io/project-pages/projectors/projector0001" height="500px" width="100%">
+<embed src="http://matin-hub.github.io/project-pages/projectors/projector0001" height="500px" width="100%">
 
 ## STL
 
-<div align="center"><script src="https://embed.github.com/view/3d/ahmetcecen/project-pages/gh-pages/img/stl/test.stl"></script></div>
+<div align="center"><script src="https://embed.github.com/view/3d/matin-hub/project-pages/gh-pages/img/stl/test.stl"></script></div>
 
 
