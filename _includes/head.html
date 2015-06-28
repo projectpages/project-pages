@@ -44,13 +44,13 @@
 
 	<!--<script src="http://cdnjs.cloudflare.com/ajax/libs/d3/3.4.13/d3.min.js" type="text/javascript"></script>-->
 
-	<script>
-	$( document ).ready(function() {
-		$('.post img').each( function(d,i){
-			$(this)
-				.wrap( '<a href="' + $(this).attr("src") +
-					'" data-title="'+$(this).attr("alt")+'" data-lightbox="post-img"></a>')
-			});
-	});
-	</script>
+    <!-- jQuery -->
+	<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+	<!-- Bootstrap Core JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+	<!-- Custom Theme JavaScript -->
+	<script src="{{ "/js/clean-blog.min.js " | prepend: site.baseurl }}"></script>
+	
 </head>
