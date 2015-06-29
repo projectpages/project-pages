@@ -126,11 +126,16 @@
           .style("stroke", "#000")
           .style("shape-rendering", "crispEdges")
 
+      // var tooltip = d3.select("#divPlot")
+      //   .append("img")
+      //   .style("position", "absolute")
+      //   .style("z-index", "10")
+      //   .style("visibility", "hidden")
+
       var tooltip = d3.select("#divPlot")
-        .append("img")
+        .append("div")
         .style("position", "absolute")
         .style("z-index", "10")
-        .style("visibility", "hidden")
 
       svg.selectAll(".dot")
           .data(data)
@@ -141,11 +146,16 @@
           .attr("cy", function(d) { return y(d.y); })
           .style("fill", function(d) { return "{{ page.dataPointColor }}"; })
           .style("stroke", "#fff")
-          .on("mouseover", function(d){return tooltip.style("visibility", "visible")
-            .attr("src", d.url);})
+          // .on("mouseover", function(d){return tooltip.style("visibility", "visible")
+          //   .attr("src", d.url);})
+          //   .on("mousemove", function(){return tooltip.style("top",
+          //       (d3.event.pageY-480)+"px").style("left",(d3.event.pageX-240)+"px");})
+          //   .on("mouseout", function(){return tooltip.style("visibility", "hidden");});
+          .on("mouseover", function(d){ tooltip.html("<img src=" + d.url + "/><p>property one</p><p>property two</p>");})
             .on("mousemove", function(){return tooltip.style("top",
                 (d3.event.pageY-480)+"px").style("left",(d3.event.pageX-240)+"px");})
-            .on("mouseout", function(){return tooltip.style("visibility", "hidden");});
+            .on("mouseout", function(){return tooltip.html("");});
+
 
       // var legend = svg.selectAll(".legend")
       //     .data(color.domain())
