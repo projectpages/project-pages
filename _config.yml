@@ -5,7 +5,7 @@ header-img: img/home-bg.jpg
 email: your-email@yourdomain.com
 description: "Write your site description here. It will be used as your sites meta description as well!"
 baseurl: "/project-pages"
-url: "http://matinhub.github.io"
+url: "http://matin-hub.github.io"
 github_username:  matin-hub
 project_repository: project-pages
 
