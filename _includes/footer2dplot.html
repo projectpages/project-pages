@@ -144,7 +144,7 @@
           .attr("r", "{{ page.dataPointRadius }}")
           .attr("cx", function(d) { return x(d.x); })
           .attr("cy", function(d) { return y(d.y); })
-          .style("fill", function(d) { return "{{ page.dataPointColor }}"; })
+          .style("fill", function(d) { return d.fill; })
           .style("stroke", "#fff")
           // .on("mouseover", function(d){return tooltip.style("visibility", "visible")
           //   .attr("src", d.url);})

@@ -3,7 +3,7 @@ layout: "post2dplot"
 author: "Eric Wang"
 date: "June 22, 2015"
 jsonFileName: "data2d.json"
-dataPointColor: "teal"
+#dataPointColor: "teal"
 dataPointRadius: 6
 #canvas size
 scaleWidth: 400
@@ -12,3 +12,165 @@ scaleHeight: 400
 
 #A 2d plot
 {% include canvas.html %}
+
+#Generate the JSON file
+{% highlight python %}
+import flickrapi
+import json
+
+#helper function to generate the json file
+def generate2dJson(api_key, api_secret, user_id, photoset_id, img_size, img_file_format, first_pc_list, second_pc_list, img_title_list, file_name):
+	#configure api and get photos
+	flickr = flickrapi.FlickrAPI(api_key, api_secret, format='parsed-json')
+	photos = flickr.photosets.getPhotos(api_key=api_key, photoset_id=photoset_id, user_id=user_id)
+	#create img title, img url dict
+	url_dict = {}
+	for item in photos['photoset']['photo']:
+		url = 'http://farm'+str(item['farm'])+'.staticflickr.com/'+str(item['server'])+'/'+str(item['id'])+'_'+item['secret']+'_'+img_size+'.'+img_file_format
+		url_dict.update({item['title']: url})
+	#data list to output as json file
+	dt_list = []
+	keys = ['x', 'y', 'title']
+	for item in zip(first_pc_list, second_pc_list, img_title_list):
+		item_dict = dict(zip(keys, item))
+		item_dict.update({'url': url_dict[item_dict['title']]})
+		dt_list.append(item_dict)
+	#dump json file
+	with open('../json/'+file_name+'.json', 'w') as output:
+		json.dump(dt_list, output)
+{% endhighlight %}
+
+#Run a test by calling the helper function
+{% highlight python %}
+import numpy as np
+from generate2dJson import generate2dJson
+
+#arguments
+api_key = ''
+api_secret = ''
+user_id = ''
+photoset_id = ''
+img_size = 't'
+img_file_format = 'jpg'
+file_name = 'data2d'
+
+# generate random data points ranging from 0 to 10
+x = np.random.random(100) * 10
+y = np.random.random(100) * 10
+# image titles must match those on flickr
+img_title_list = []
+for i in xrange(1,101):
+	title = 'img' + str(i)
+	img_title_list.append(title)
+
+generate2dJson(api_key, api_secret, user_id, photoset_id, img_size, img_file_format, x, y, img_title_list, file_name)
+{% endhighlight %}
+
+#d3 code
+{% highlight javascript %}
+var margin = {top: 20, right: 20, bottom: 30, left: 40},
+    width = {{ page.scaleWidth }} - margin.left - margin.right,
+    height = {{ page.scaleHeight }} - margin.top - margin.bottom;
+
+    var x = d3.scale.linear()
+        .range([0, width]);
+
+    var y = d3.scale.linear()
+        .range([height, 0]);
+
+    var color = d3.scale.category10();
+
+    var xAxis = d3.svg.axis()
+        .scale(x)
+        .orient("bottom");
+
+    var yAxis = d3.svg.axis()
+        .scale(y)
+        .orient("left");
+
+    var svg = d3.select("#divPlot").append("svg")
+        .attr("width", width + margin.left + margin.right)
+        .attr("height", height + margin.top + margin.bottom)
+      .append("g")
+        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+    d3.json("{{ "/json/" | prepend: site.baseurl | append: page.jsonFileName }}", function(error, data) {
+      data.forEach(function(d) {
+        d.x = +d.x;
+        d.y = +d.y;
+      });
+
+      //x.domain(d3.extent(data, function(d) { return d.sepalWidth; })).nice();
+      //y.domain(d3.extent(data, function(d) { return d.sepalLength; })).nice();
+      y.domain([0, d3.max(data, function(d) { return d.y; })]).nice();
+      x.domain([0, d3.max(data, function(d) { return d.x; })]).nice();
+
+      svg.append("g")
+          .attr("class", "x axis")
+          .attr("transform", "translate(0," + height + ")")
+          .call(xAxis)
+        .append("text")
+          .attr("class", "label")
+          .attr("x", width)
+          .attr("y", -6)
+          .style("text-anchor", "end")
+          .text("x");
+
+      svg.append("g")
+          .attr("class", "y axis")
+          .call(yAxis)
+        .append("text")
+          .attr("class", "label")
+          .attr("transform", "rotate(-90)")
+          .attr("y", 6)
+          .attr("dy", ".71em")
+          .style("text-anchor", "end")
+          .text("y")
+
+      svg.selectAll(".axis")
+          .style("fill", "none")
+          .style("stroke", "#000")
+          .style("shape-rendering", "crispEdges")
+
+      var tooltip = d3.select("#divPlot")
+        .append("img")
+        .style("position", "absolute")
+        .style("z-index", "10")
+        .style("visibility", "hidden")
+
+      svg.selectAll(".dot")
+          .data(data)
+        .enter().append("circle")
+          .attr("class", "dot")
+          .attr("r", "{{ page.dataPointRadius }}")
+          .attr("cx", function(d) { return x(d.x); })
+          .attr("cy", function(d) { return y(d.y); })
+          .style("fill", function(d) { return d.color; })
+          .style("stroke", "#fff")
+          .on("mouseover", function(d){return tooltip.style("visibility", "visible")
+            .attr("src", d.url);})
+            .on("mousemove", function(){return tooltip.style("top",
+                (d3.event.pageY-480)+"px").style("left",(d3.event.pageX-240)+"px");})
+            .on("mouseout", function(){return tooltip.style("visibility", "hidden");});
+
+      // var legend = svg.selectAll(".legend")
+      //     .data(color.domain())
+      //   .enter().append("g")
+      //     .attr("class", "legend")
+      //     .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
+
+      // legend.append("rect")
+      //     .attr("x", width - 18)
+      //     .attr("width", 18)
+      //     .attr("height", 18)
+      //     .style("fill", color);
+
+      // legend.append("text")
+      //     .attr("x", width - 24)
+      //     .attr("y", 9)
+      //     .attr("dy", ".35em")
+      //     .style("text-anchor", "end")
+      //     .text(function(d) { return d; });
+
+    });
+{% endhighlight %}
