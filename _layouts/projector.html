@@ -5,7 +5,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 
-		<link rel="stylesheet" type="text/css" href="/project-pages/plugin/projector/DataProjector.css">
+		<link rel="stylesheet" type="text/css" href="{{ "/plugin/projector/DataProjector.css" | prepend: site.baseurl }}">
 	</head>
 	<body>
 
@@ -50,12 +50,12 @@
 		<div id="screenshots">
 		</div>
 
-		<script src="/project-pages/plugin/projector/jquery-2.0.2.min.js"></script>
-		<script src="/project-pages/plugin/projector/three.min.js"></script>
-		<script src="/project-pages/plugin/projector/TweenLite.min.js"></script>
-		<script src="/project-pages/plugin/projector/TrackballControls.js"></script>
+		<script src="{{ "/plugin/projector/jquery-2.0.2.min.js " | prepend: site.baseurl }}"></script>
+		<script src="{{ "/plugin/projector/three.min.js " | prepend: site.baseurl }}"></script>
+		<script src="{{ "/plugin/projector/TweenLite.min.js " | prepend: site.baseurl }}"></script>
+		<script src="{{ "/plugin/projector/TrackballControls.js " | prepend: site.baseurl }}"></script>
 		
-		<script src="/project-pages/plugin/projector/DataProjector.js"></script>
+		<script>{% include DataProjector.js %}</script>
 
 	</body>
 </html>

@@ -52,7 +52,7 @@ tags: 		result
 
 Hover your pointer over the image to expand the view.
 
-![Description](http://img3.wikia.nocookie.net/__cb20140102180853/fairytail/images/5/5b/Logo_Fairy_Tail_right.png)
+![Description](/project/img/Logo_Fairy_Tail_right.png)
 
 #Code:
 
@@ -105,7 +105,7 @@ Head over to the [documentation page](http://matin-hub.github.io/ppguide/) for t
 
 ## Data Projector
 
-<embed src="http://matin-hub.github.io/project-pages/projectors/projector0001" height="500px" width="100%">
+<embed src="https://private-pages.herokuapp.com/project/projectors/projector0001/" height="500px" width="100%">
 
 ## STL
 
