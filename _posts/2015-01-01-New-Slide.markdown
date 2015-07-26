@@ -97,7 +97,7 @@ $$ A = \pi r^2 $$
 
 Alt-Click to zoom.
 
-![Description](/project/img/Logo_Fairy_Tail_right.png)
+![Description](/img/Logo_Fairy_Tail_right.png)
 
 {{ page.horizontal }}
 
@@ -145,7 +145,7 @@ Now, you CAN write in HTML using this template. If you want to create HTML prese
 
 ## Data Projector
 
-<embed src="https://private-pages.herokuapp.com/project/projectors/projector0001/" height="500px" width="100%">
+<embed src="/project-pages/projectors/projector0001/" height="500px" width="100%">
 
 <!-- End Here -->
 {{ page.horizontal }}
