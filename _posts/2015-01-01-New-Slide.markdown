@@ -97,7 +97,7 @@ $$ A = \pi r^2 $$
 
 Alt-Click to zoom.
 
-![Description](/img/Logo_Fairy_Tail_right.png)
+![Description](/project-pages/img/Logo_Fairy_Tail_right.png)
 
 {{ page.horizontal }}
 
