@@ -62,6 +62,10 @@ Press B to pause the presentation.
 
 ***Bold and Italics***
 
+--Strikethrough Text--
+
+<u>Underline Text</u>
+
 {{ page.horizontal }}
 
 Use MathJax for Math.
