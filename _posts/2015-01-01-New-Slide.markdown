@@ -44,7 +44,7 @@ Press B to pause the presentation.
 
 {{ page.horizontal }}
 
-#Headers:
+#Headers
 
 # Header 1
 
@@ -54,7 +54,7 @@ Press B to pause the presentation.
 
 {{ page.horizontal }}
 
-#Styling:
+#Styling
 
 **Bold**
 
@@ -70,7 +70,7 @@ $$ A = \pi r^2 $$
 
 {{ page.horizontal }}
 
-#Lists:
+#Lists
 
 1. Item 1
 
@@ -80,7 +80,7 @@ $$ A = \pi r^2 $$
 
 {{ page.horizontal }}
 
-#Links:
+#Links
 
 [In-Line](https://www.google.com)
 
@@ -93,7 +93,7 @@ $$ A = \pi r^2 $$
 
 {{ page.horizontal }}
 
-#Images:
+#Images
 
 Alt-Click to zoom.
 
@@ -101,13 +101,13 @@ Alt-Click to zoom.
 
 {{ page.horizontal }}
 
-#Code:
+#Code
 
 Inline `code`.
 
 {{ page.vertical }}
 
-#Code Block:
+#Code Block
 
 	import numpy as np
 	def _set_colors():
