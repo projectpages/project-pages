@@ -1,3 +1,6 @@
 _site
 node_modules
 Gemfile*
+.DS_Store
+_drafts/*
+img/.DS_Store
