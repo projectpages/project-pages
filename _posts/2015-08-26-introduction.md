@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      Introduction
-date:       2015-28-08
+date:       2015-08-28
 author:     Microstructure Grain Growth
 ---
 
