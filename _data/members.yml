@@ -1,17 +1,9 @@
 # Members
 
-- name: Ahmet Cecen
+- name: Fred Hohman
   role: Data Scientist / Material Informatics
-  img: https://avatars1.githubusercontent.com/u/7231251?v=3&s=460
-  github: ahmetcecen
-  gplus: https://plus.google.com/+AhmetCecen-GPlus
-  bio: Ahmet Cecen is currently pursuing a PhD in Computational Science and Engineering at Georgia Institute of Technology.  He earned a bachelor’s degree in Mechanical Engineering at Drexel University. Ahmet has been doing research in the fields of computational materials science and materials informatics for the past 6 years, throughout his undergraduate and graduate studies. His current research focus is on leveraging statistical analysis and machine learning tools to solve big data analytics problems in materials science. 
-  url: http://ahmetcecen.github.io/
-   
-- name: David Brough
-  role: Data Scientist / Material Informatics
-  img: https://avatars0.githubusercontent.com/u/4368625?v=3&s=460
-  github: davidbrough1
-  bio: David is a PhD student in the School of Computational Science and Engineering at Georgia Institute of Technology. David earned a Master’s degree in experimental condensed matter physics at Brigham Young University where he fabricated and characterized thin-films and carbon nanotubes used in nanostructured high capacity battery electrodes and in X-ray windows. As an undergraduate, David studied theoretical physics and researched the evolution of chaotic systems using neural networks at Westminster College. He is a trainee in the NSF IGERT FLAMEL program, and one of the lead developers on PyMKS materials informatics toolkit.
-  url: http://davidbrough.net 
-  
+  img: img/fredhohman.JPG
+  github: fredhohman
+  gplus: https://plus.google.com/u/0/+FredHohman/posts
+  bio: "Fred is a first-year Ph.D. student studying Computational Science and Engineering in the College of Computing at Georgia Institute of Technology. He received his undergraduate degrees in applied mathematics and physics at The University of Georgia where he explored 3D printing in topology by observing the physical geometry of knots that are particularly hard to visualize. His interests include the broad fields of data science, digital design, and visualization."
+  url: http://www.fredhohman.com
