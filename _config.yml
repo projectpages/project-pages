@@ -1,13 +1,13 @@
 # Site settings
 
-title: Microstructure Grain Growth
+title: Grain Growth
 header-img: img/grain-growth.png
 email: fredhohman@gatech.edu
-description: "Microstructure Grain Growth Project for CSE 8803/ME 8883 at Georgia Tech."
-baseurl: "/microstructure-grain-growth"
+description: "Grain Growth Project for CSE 8803/ME 8883 at Georgia Tech."
+baseurl: "/grain-growth"
 url: "http://fredhohman.github.io"
 github_username:  fredhohman
-project_repository: microstructure-grain-growth
+project_repository: grain-growth
 
 # Build settings
 # Don't change these variables
