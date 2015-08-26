@@ -1,13 +1,13 @@
 # Site settings
 
-title: Project Pages
-header-img: img/home-bg.jpg
-email: your-email@yourdomain.com
-description: "Write your site description here. It will be used as your sites meta description as well!"
-baseurl: "/project-pages"
-url: "http://matin-hub.github.io"
-github_username:  matin-hub
-project_repository: project-pages
+title: Microstructure Grain Growth
+header-img: img/temperature_growth.jpg
+email: fredhohman@gatech.edu
+description: "Microstructure Grain Growth Project for CSE 8803/ME 8883 at Georgia Tech."
+baseurl: "/microstructure-grain-growth"
+url: "http://fredhohman.github.io"
+github_username:  fredhohman
+project_repository: microstructure-grain-growth
 
 # Build settings
 # Don't change these variables
