@@ -2,10 +2,10 @@
 layout:     post
 title:      Introduction
 date:       2015-08-28
-author:     Microstructure Grain Growth
+author:     Grain Growth Team
 ---
 
-Welcome to the **Microstructure Grain Growth** Project website! 
+Welcome to the **Grain Growth** Project website! 
 
 This is the semester project for the CSE 8803/ME 8883 Material Informatics class at Georgia Tech during the Fall 2015 semester.
 
