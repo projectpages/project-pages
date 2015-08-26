@@ -2,7 +2,7 @@
 
 - name: Fred Hohman
   role: Data Scientist / Material Informatics
-  img: {{ site.url }}/img/fredhohman.JPG
+  img: https://avatars0.githubusercontent.com/u/5741691?v=3&s=460
   github: fredhohman
   gplus: https://plus.google.com/u/0/+FredHohman/posts
   bio: "Fred is a first-year Ph.D. student studying Computational Science and Engineering in the College of Computing at Georgia Institute of Technology. He received his undergraduate degrees in applied mathematics and physics at The University of Georgia where he explored 3D printing in topology by observing the physical geometry of knots that are particularly hard to visualize. His interests include the broad fields of data science, digital design, and visualization."
