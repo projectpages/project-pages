@@ -2,7 +2,7 @@
 
 Welcome to the **Microstructure Grain Growth** project website! 
 
-This is the semester project for CSE 8803/ME 8883 Material Informatics class at Georgia Tech during the Fall 2015 semester.
+This is the semester project for the CSE 8803/ME 8883 Material Informatics class at Georgia Tech during the Fall 2015 semester.
 
 This project is lead by Ph.D. students [Fred Hohman][fh] (Computational Science and Engineering) and [David Montes de Oca Zapiain][dm] (Mechanical Engineering) while under the guidance of postdoc [Evdokia Popova][ep] (Mechanical Engineering). 
 
