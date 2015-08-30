@@ -10,7 +10,7 @@ The goal of this blog post is to teach our followers how to generate a synthetic
 DREAM 3D is software that allows its users to generate, reconstruct, instantiate, quantify and mesh microstructure digitally. This software can be obtained at the following link [http://dream3d.bluequartz.net] .
 Our team will be using this software to generate various synthetic Microstructures that will be the input to SSPARKS which uses the kinetic Monte Carlo equations to model static recrystallization. An example of a generated microstructure can be observed below.
 
-![Generated Micro-Structure](grain-growth\img\blogpostimages\bp 1\image1.jpg)
+![Generated Micro-Structure](img\blogpostimages\bp 1\image1.jpg)
 
 
 The first step in generating your own microstructure will be to generate the statistics of it, by this it is meant the average grain size, crystal structure, etc. 
