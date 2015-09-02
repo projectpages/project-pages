@@ -8,6 +8,7 @@ baseurl: "/project-pages"
 url: "http://matin-hub.github.io"
 github_username:  matin-hub
 project_repository: project-pages
+disqus_shortname: project-pages
 
 # Build settings
 # Don't change these variables
