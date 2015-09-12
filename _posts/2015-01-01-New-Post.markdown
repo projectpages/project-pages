@@ -57,7 +57,7 @@ tags: 		result
 
 Hover your pointer over the image to expand the view.
 
-![Description](/project-pages/img/Logo_Fairy_Tail_right.png)
+![Description](http://matin-hub.github.io/project-pages/img/Logo_Fairy_Tail_right.png)
 
 #Code
 
@@ -110,7 +110,7 @@ Head over to the [documentation page](http://matin-hub.github.io/ppguide/) for t
 
 ## Data Projector
 
-<embed src="/project-pages/projectors/projector0001/" height="500px" width="100%">
+<embed src="http://matin-hub.github.io/project-pages/projectors/projector0001/" height="500px" width="100%">
 
 ## STL
 
