@@ -13,6 +13,8 @@
 @set PLINK_PROTOCOL=ssh
 @if not defined TERM set TERM=msys
 
+@del "Project-Pages-v1.2.0.exe"
+
 :: Install Curl
 @curl-7.43.0-win64.msi
 @del "curl-7.43.0-win64.msi"
