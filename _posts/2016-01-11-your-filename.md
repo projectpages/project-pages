@@ -2,12 +2,6 @@
 published: false
 ---
 
----
-layout: post
-date: 2015-01-01T12:00:00.000Z
-author: Materials Innovation
-tags: result
----
 
 ## A New Post
 
