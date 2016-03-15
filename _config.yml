@@ -61,3 +61,10 @@ prose:
         field:
           element: "hidden"
           value: </section><section markdown="1">
+      - name: "slideinit"
+        field:
+          element: "hidden"
+          value: <section markdown="1" data-background="http://matin-hub.github.io/project-pages/img/slidebackground.png"><section markdown="1">
+          
+          
+          
