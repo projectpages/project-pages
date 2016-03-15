@@ -51,7 +51,7 @@ prose:
       - name: "tags"
         field:
           element: "text"
-          label: "Choose Layout"
+          label: "Tags (seperate with a comma)"
           value: ""
       - name: "horizontal"
         field:
@@ -65,6 +65,40 @@ prose:
         field:
           element: "hidden"
           value: <section markdown="1" data-background="http://matin-hub.github.io/project-pages/img/slidebackground.png"><section markdown="1">
-          
-          
-          
+      - name: "theme"
+        field:
+          element: "select"
+          label: "Choose Layout"
+          placeholder: "Theme (Slide)"
+          options:
+            - name: "Beige"
+              value: "beige"
+            - name: "Blood"
+              value: "blood"
+            - name: "Moon"
+              value: "moon"          
+            - name: "Night"
+              value: "night"
+            - name: "Sky"
+              value: "sky"
+            - name: "Solarized"
+              value: "solarized"             
+      - name: "trans"
+        field:
+          element: "select"
+          label: "Choose Layout"
+          placeholder: "Transition (Slide)"
+          options:
+            - name: "Cube"
+              value: "cube"
+            - name: "Page"
+              value: "page"
+            - name: "Concave"
+              value: "concave"          
+            - name: "Linear"
+              value: "linear"
+            - name: "Fade"
+              value: "fade"
+            - name: "None"
+              value: "none"             
+
