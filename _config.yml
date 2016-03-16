@@ -68,7 +68,7 @@ prose:
       - name: "theme"
         field:
           element: "select"
-          label: "Choose Layout"
+          label: "Theme (Slide)"
           placeholder: "Theme (Slide)"
           options:
             - name: "Beige"
@@ -86,7 +86,7 @@ prose:
       - name: "trans"
         field:
           element: "select"
-          label: "Choose Layout"
+          label: "Transition (Slide)"
           placeholder: "Transition (Slide)"
           options:
             - name: "Cube"
