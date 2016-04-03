@@ -7,22 +7,20 @@ tags: 		result
 ---
 <!-- Start Writing Below in Markdown -->
 
-#Table of Contents
+# Table of Contents
 
 * TOC
 {:toc}
 
-#Headers
+# Headers
 
 # Header 1
-
-{{page.json}}
 
 ## Header 2
 
 ### Header 3
 
-#Styling
+# Styling
 
 **Bold**
 
@@ -30,7 +28,7 @@ tags: 		result
 
 ***Bold and Italics***
 
-#Lists
+# Lists
 
 1. Item 1
 
@@ -42,7 +40,7 @@ tags: 		result
 
     1. **Bold** Sub Sub Ordered Item
 
-#Links
+# Links
 
 [In-Line](https://www.google.com)
 
@@ -53,13 +51,13 @@ tags: 		result
 [1]:https://www.mozilla.org
 [2]:http://www.reddit.com
 
-#Images
+# Images
 
 Hover your pointer over the image to expand the view.
 
 ![Description](http://matin-hub.github.io/project-pages/img/Logo_Fairy_Tail_right.png)
 
-#Code
+# Code
 
 Inline `code`.
 
@@ -69,12 +67,12 @@ def hello_world():
     print('Hello World!'')
 {% endhighlight %}
 
-#MathJax
+# MathJax
 
 Use MathJax for Math.
 $$ A = \pi r^2 $$
 
-#Tables
+# Tables
 
 Here | is | a | row!
 |---------|:----------|:----------:|---------:|
@@ -82,7 +80,7 @@ is   |Left|  Center  |Right|
 a    | cut | it | A
 column  | short | B | C
 
-#Quotes
+# Quotes
 
 > War does not decide who is *right*, only who is **left**.
 

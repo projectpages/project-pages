@@ -417,3 +417,14 @@ div.notepad-index-post-tags {
 .notepad-index-post-tags a:hover {
 	color: #e51843;
 	border: 0.0625rem solid #e51843; }
+
+table {
+	width:100%;
+}
+
+th {
+	border-bottom-color: black;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-collapse: collapse;
+}
