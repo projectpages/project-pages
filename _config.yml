@@ -12,6 +12,7 @@ disqus_shortname: project-pages
 
 # Build settings
 # Don't change these variables
+gems: [jekyll-paginate]
 markdown: kramdown
 highlighter: rouge
 permalink: pretty
