@@ -53,7 +53,7 @@ tags: 		result
 
 # Images
 
-Hover your pointer over the image to expand the view.
+Hold your pointer clicked over the image to expand the view.
 
 ![Description](http://matin-hub.github.io/project-pages/img/Logo_Fairy_Tail_right.png)
 
