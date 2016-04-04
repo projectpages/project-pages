@@ -1,7 +1,6 @@
 ---
 layout: page
 ---
-
 {% for post in paginator.posts %}
 <div class="post-preview">
     <a href="{{ post.url | prepend: site.baseurl }}">
@@ -14,7 +13,9 @@ layout: page
         {% endif %}
     </a>
     <p class="post-meta" style="margin-bottom:5px">Posted by {{ post.author }} on {{ post.date | date: "%B %-d, %Y" }}</p>
-	{% if post.tags contains 'result' %}<img src="{{ "/img/icons/resulttag.png " | prepend: site.baseurl }}" height="30px" style="margin-top: 5px;margin-right: 5px">{% endif %}
+	<div class="notepad-index-post-tags" style="">
+		{% for tag in post.tags %}<a href="{{ site.baseurl }}/search/index.html#{{ tag | cgi_encode }}" title="Other posts from the {{ tag | capitalize }} tag">{{ tag | capitalize }}</a>{% unless forloop.last %}&nbsp;{% endunless %}{% endfor %}
+	</div>
 </div>
 <hr>
 {% endfor %}

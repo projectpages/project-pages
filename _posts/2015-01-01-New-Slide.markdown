@@ -3,6 +3,7 @@ layout:     	slide
 title:     		Presentation Headline
 date:      	2015-06-23 03:00 
 author:     	Materials Innovation
+tags:            result presentation
 
 theme:		night # default/beige/blood/moon/night/serif/simple/sky/solarized
 trans:		default # default/cube/page/concave/zoom/linear/fade/none
@@ -44,8 +45,6 @@ Press B to pause the presentation.
 
 {{ page.horizontal }}
 
-#Headers
-
 # Header 1
 
 ## Header 2
@@ -54,7 +53,7 @@ Press B to pause the presentation.
 
 {{ page.horizontal }}
 
-#Styling
+# Styling
 
 **Bold**
 
@@ -70,7 +69,7 @@ $$ A = \pi r^2 $$
 
 {{ page.horizontal }}
 
-#Lists
+# Lists
 
 1. Item 1
 
@@ -80,7 +79,7 @@ $$ A = \pi r^2 $$
 
 {{ page.horizontal }}
 
-#Links
+# Links
 
 [In-Line](https://www.google.com)
 
@@ -93,7 +92,7 @@ $$ A = \pi r^2 $$
 
 {{ page.horizontal }}
 
-#Images
+# Images
 
 Alt-Click to zoom.
 
@@ -101,13 +100,13 @@ Alt-Click to zoom.
 
 {{ page.horizontal }}
 
-#Code
+# Code
 
 Inline `code`.
 
 {{ page.vertical }}
 
-#Code Block
+# Code Block
 
 	import numpy as np
 	def _set_colors():
@@ -115,13 +114,13 @@ Inline `code`.
 
 {{ page.horizontal }}
 
-#Quotes
+# Quotes
 
 > War does not decide who is right, only who is **left**.
 
 {{ page.horizontal }}
 
-#HTML
+# HTML
 
 Now, you CAN write in HTML using this template. If you want to create HTML presentations using this framework head over to [reveal.js](http://lab.hakim.se/reveal-js/#/) for reference.  For a power-point like interactive tool for creating presentations with this theme, check [slides.com](http://slides.com/).
 
@@ -150,8 +149,8 @@ Now, you CAN write in HTML using this template. If you want to create HTML prese
 <!-- End Here -->
 {{ page.horizontal }}
 
-#[Print]({{ site.url }}{{ site.baseurl }}{{ page.url }}/?print-pdf#)
+# [Print]({{ site.url }}{{ site.baseurl }}{{ page.url }}/?print-pdf#)
 
-#[Back]({{ site.url }}{{ site.baseurl }})
+# [Back]({{ site.url }}{{ site.baseurl }})
 
 </section></section>

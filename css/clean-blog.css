@@ -139,7 +139,7 @@ hr.small {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 .intro-header .site-heading,
 .intro-header .post-heading,
@@ -398,4 +398,33 @@ img::-moz-selection {
 }
 body {
   webkit-tap-highlight-color: #0085a1;
+}
+
+div.notepad-index-post-tags {
+    font-size: 16px;
+    float: none;
+    color: black;
+    padding-top: 1.25rem;
+    padding-bottom: 0.625rem; }
+.notepad-index-post-tags a {
+	display: inline-block;
+	padding: 0.3125rem 0.9375rem;
+	margin-right: 0.1875rem;
+	color: black;
+	border: 0.0625rem solid black;
+	border-radius: 0.125rem;
+	margin-bottom: 0.3125rem; }
+.notepad-index-post-tags a:hover {
+	color: #e51843;
+	border: 0.0625rem solid #e51843; }
+
+table {
+	width:100%;
+}
+
+th {
+	border-bottom-color: black;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-collapse: collapse;
 }
