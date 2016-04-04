@@ -11,7 +11,7 @@ project_repository: project-pages
 disqus_shortname: project-pages
 g-analytics: UA-75881392-1
 prose:
-  relativeLinks: 'http://matin-hub.github.io/project-pages/proselinks.json'
+  relativeLinks: 'http://matin-hub.github.io/project-pages/proselinks.jsonp'
   
 # Build settings
 # Don't change these variables
@@ -26,7 +26,6 @@ exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
 prose:
   rooturl: '_posts'
   siteurl: 'http://matin-hub.github.io/project-pages/'
-  relativeLinks: 'http://matin-hub.github.io/project-pages/proselinks.json'
   media: 'img'
   metadata:
     _posts:
