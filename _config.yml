@@ -5,13 +5,13 @@ header-img: img/home-bg.jpg
 email: your-email@yourdomain.com
 description: "Write your site description here. It will be used as your sites meta description as well!"
 baseurl: "/project-pages"
-url: "http://matin-hub.github.io"
+url: "http://ahmetcecen.github.io"
 github_username:  matin-hub
 project_repository: project-pages
 disqus_shortname: project-pages
 g-analytics: UA-75881392-1
 prose:
-  relativeLinks: 'http://matin-hub.github.io/project-pages/proselinks.jsonp'
+  relativeLinks: 'http://ahmetcecen.github.io/project-pages/proselinks.jsonp'
   
 # Build settings
 # Don't change these variables
@@ -25,7 +25,7 @@ exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
 # Prose Settings
 prose:
   rooturl: '_posts'
-  siteurl: 'http://matin-hub.github.io/project-pages/'
+  siteurl: 'http://ahmetcecen.github.io/project-pages/'
   media: 'img'
   metadata:
     _posts:
