@@ -7,37 +7,7 @@ tags: 		result
 subtitle:  Some short description of post.
 ---
 
-<script src="/project-pages/js/mermaid.min.js"></script>
-<link rel="stylesheet" href="/project-pages/css/mermaid.forest.css">
-<script>mermaid.initialize({startOnLoad:true});</script>
-
-{% for post in site.posts %}
-{% if post.title == page.title and post.author == page.author and post.date == page.date %}
-{% assign text = post.content | split:"### " %}
-{% endif %}
-{% endfor %}
-
-{% assign headercount = text | size | minus:1 %}
-
-{% assign currentheader = text[2] | newline_to_br | split:"<br />" | first %}
-
-<div class="mermaid">
-
-graph TB
-
-subgraph one
-{% for header in (3..headercount) %}{% assign prevheader = currentheader %}{% assign currentheader = text[header] | newline_to_br | split:"<br />" | first %}
-node{{ header | minus:1 }}({{ prevheader }}) --> node{{ header }}({{ currentheader }}){% endfor %}
-end
-node4 --> B
-
-</div>
-
-
-
----
-
-
+{% include workflow.html %}
 
 # Meet PyMKS
 
@@ -270,6 +240,6 @@ The `MKSLocalizationModel` can be used to predict local properties and local pro
 
 # Now Testing WorkFlows
 
-## Test 1
+## Test 1 Is it Long Enough
 
 ### Test 2
