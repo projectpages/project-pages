@@ -1,9 +1,9 @@
 ---
 layout:     post
-title:      Post Headline 2
-date:       2016-04-01 12:00:00
+title:      Post Headline
+date:       2015-01-01 12:00:00
 author:     Ahmet Cecen
-tags: 		thoughts
+tags: 		template
 subtitle:  Some short description of post.
 ---
 <!-- Start Writing Below in Markdown -->
