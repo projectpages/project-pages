@@ -3,7 +3,7 @@ layout:     post
 title:      Post Headline
 date:       2015-01-01 12:00:00
 author:     Ahmet Cecen
-tags: 		result
+tags: 		template
 subtitle:  Some short description of post.
 ---
 <!-- Start Writing Below in Markdown -->
