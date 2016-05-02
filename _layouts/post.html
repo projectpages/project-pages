@@ -149,6 +149,7 @@ layout: default
 
 <!-- Post Content -->
 {% include imagezoom.html %}
+{% include anchor.html %}
 
 <article>
     <div id="content" class="container">
@@ -182,3 +183,6 @@ layout: default
 {% include _comments.html %}
 
 <hr>
+
+<script src="{{ "/js/anchor.js " | prepend: site.baseurl }}"></script>
+<script> anchors.add(); </script>

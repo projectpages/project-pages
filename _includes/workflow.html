@@ -69,6 +69,8 @@ graph TB
 			{% assign smallheadercount = smallheadercount | plus:1 %}
 
 			node{{ sub }}({{ currentheader }})
+			
+			click node{{ sub }} "{{ currentheader | strip | downcase | replace:' ','-' | prepend:'page.url' }}"
 
 		{% else %}
 		
@@ -78,6 +80,8 @@ graph TB
 			{% assign currentsub = sub %}
 			
 			node{{ prevsub }}({{ prevheader }}) --> node{{ sub }}({{ currentheader }})
+			
+			click node{{ sub }} "{{ currentheader | strip | downcase | replace:' ','-' | prepend:'#' }}"
 
 		{% endif %}
 
