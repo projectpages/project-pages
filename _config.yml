@@ -23,7 +23,7 @@ exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
 
 # Prose Settings
 prose:
-  rooturl: '_posts'
+  ignore: ['feed.xml', '_config.yml']
   siteurl: 'http://ahmetcecen.github.io/project-pages/'
   ispp: true
   media: 'img'
