@@ -23,7 +23,7 @@ exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
 
 # Prose Settings
 prose:
-  ignore: ['feed.xml', '/stl', '/ply', '/js', '/plugin', '/lib', '/projectors', '_layouts', '/includes', 'Gruntfile.js', 'package.json', 'proselinks.jsonp', 'ppanchor.matin']
+  ignore: ['feed.xml', '/stl', '/ply', '/js', '/plugin', '/lib', '/projectors', '_layouts', '/includes', 'Gruntfile.js', 'package.json', 'proselinks.jsonp', 'ppanchor.matin', '.gitignore', '/search', '/css/print']
   siteurl: 'http://ahmetcecen.github.io/project-pages/'
   ispp: true
   media: 'img'
