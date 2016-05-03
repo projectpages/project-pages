@@ -1,10 +1,10 @@
 ---
 layout:     	slide
-title:     		Presentation Headline
-date:      	2015-06-23 03:00 
-author:     	Materials Innovation
-tags:            result presentation
-subtitle:    Some short description of presentation.
+title:     		New Presentation
+date:      		2016-04-23
+author:     	Ahmet Cecen
+tags:           presentation template
+subtitle:    	Some Short Description of Presentation
 
 theme:		night # default/beige/blood/moon/night/serif/simple/sky/solarized
 trans:		default # default/cube/page/concave/zoom/linear/fade/none
@@ -139,13 +139,13 @@ Now, you CAN write in HTML using this template. If you want to create HTML prese
 
 ## STL
 
-<div align="center"><script src="https://embed.github.com/view/3d/matin-hub/project-pages/gh-pages/img/stl/test.stl"></script></div>
+<div align="center"><script src="https://embed.github.com/view/3d/matin-hub/project-pages/gh-pages/stl/test.stl"></script></div>
 
 {{ page.horizontal }}
 
 ## Data Projector
 
-<embed src="http://matin-hub.github.io/project-pages/projectors/projector0001/" height="500px" width="100%">
+<embed src="/project-pages/2016/05/02/New-Projector/" height="500px" width="100%">
 
 <!-- End Here -->
 {{ page.horizontal }}

@@ -1,18 +1,27 @@
 ---
 layout:     post
-title:      Post Headline 2
-date:       2015-01-01 12:00:00
+title:      New Post
+date:       2016-04-22
 author:     Ahmet Cecen
-tags: 		template
-subtitle:  Some short description of post.
-
+tags: 		post template
+subtitle:  	Some Short Description of Post
 ---
-
 <!-- Start Writing Below in Markdown -->
+
+# Table of Contents
+
+* TOC
+{:toc}
 
 # Basic Functionality
 
 ## Headers
+
+# Header 1
+
+## Header 2
+
+### Header 3
 
 ## Styling
 
@@ -100,10 +109,10 @@ Head over to the [documentation page](http://matin-hub.github.io/ppguide/) for t
 
 ## Data Projector
 
-<embed src="http://matin-hub.github.io/project-pages/projectors/projector0001/" height="500px" width="100%">
+<embed src="/project-pages/2016/05/02/New-Projector/" height="500px" width="100%">
 
 ## STL
 
-<div align="center"><script src="https://embed.github.com/view/3d/matin-hub/project-pages/gh-pages/img/stl/test.stl"></script></div>
+<div align="center"><script src="https://embed.github.com/view/3d/matin-hub/project-pages/gh-pages/stl/test.stl"></script></div>
 
 
