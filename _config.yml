@@ -2,6 +2,7 @@
 
 title: Project Pages
 header-img: img/home-bg.jpg
+headercolor: "#FFFFFF"
 logo: /project-pages/img/logos/Project-Pages-New-Logo-Inverted.png
 email: your-email@yourdomain.com
 description: "Write your site description here. It will be used as your sites meta description as well!"
@@ -23,7 +24,7 @@ exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
 
 # Prose Settings
 prose:
-  ignore: ['feed.xml', '/stl', '/ply', '/js', '/plugin', '/lib', '/projectors', '_layouts', '/includes', 'Gruntfile.js', 'package.json', 'proselinks.jsonp', 'ppanchor.matin', '.gitignore', '/search', '/css/print']
+  ignore: ['feed.xml', '/stl', '/ply', '/js', '/plugin', '/lib', '/projectors', '_layouts', '/_includes', 'Gruntfile.js', 'package.json', 'proselinks.jsonp', 'ppanchor.matin', '.gitignore', '/search', '/css']
   siteurl: 'http://ahmetcecen.github.io/project-pages/'
   ispp: true
   media: 'img'
