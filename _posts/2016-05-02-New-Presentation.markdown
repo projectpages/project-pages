@@ -1,7 +1,6 @@
 ---
 layout:     	slide
 title:     		New Presentation
-date:      		2016-04-23
 author:     	Ahmet Cecen
 tags:           presentation template
 subtitle:    	Some Short Description of Presentation

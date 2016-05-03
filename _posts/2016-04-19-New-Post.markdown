@@ -1,7 +1,6 @@
 ---
 layout:     post
 title:      New Post
-date:       2016-04-22
 author:     Ahmet Cecen
 tags: 		post template
 subtitle:  	Some Short Description of Post
