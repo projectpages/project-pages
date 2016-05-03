@@ -2,6 +2,7 @@
 
 title: Project Pages
 header-img: img/home-bg.jpg
+logo: /project-pages/img/logos/Project-Pages-New-Logo-Inverted.png
 email: your-email@yourdomain.com
 description: "Write your site description here. It will be used as your sites meta description as well!"
 baseurl: "/project-pages"
@@ -10,7 +11,7 @@ github_username:  matin-hub
 project_repository: project-pages
 disqus_shortname: project-pages
 g-analytics: UA-75881392-1
-  
+
 # Build settings
 # Don't change these variables
 gems: [jekyll-paginate]
