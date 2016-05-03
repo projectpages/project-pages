@@ -2,8 +2,16 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>{{ page.title }}</title>
+		<title>{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
 		<meta charset="utf-8">
+		
+		{% if site.altmetric == true %}
+
+		{% include altmetric.html %}
+
+		{% endif %}
+		
+		
 		<style>
 			body {
 				margin: 0px;

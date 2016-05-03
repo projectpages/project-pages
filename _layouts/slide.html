@@ -5,6 +5,12 @@
 		<meta charset="utf-8">
 
 		<title>{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+		
+		{% if site.altmetric == true %}
+
+		{% include altmetric.html %}
+
+		{% endif %}
 
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />

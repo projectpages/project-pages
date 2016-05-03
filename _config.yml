@@ -4,14 +4,15 @@ title: Project Pages
 header-img: img/home-bg.jpg
 headercolor: "#FFFFFF"
 logo: /project-pages/img/logos/Project-Pages-New-Logo-Inverted.png
-email: your-email@yourdomain.com
-description: "Write your site description here. It will be used as your sites meta description as well!"
+email: ahmetcecen@gmail.com
+description: "An Integrated Scientific Blogging Template"
 baseurl: "/project-pages"
-url: "http://ahmetcecen.github.io"
-github_username:  matin-hub
+url: "http://projectpages.github.io"
+github_username:  projectpages
 project_repository: project-pages
 disqus_shortname: project-pages
 g-analytics: UA-75881392-1
+altmetric: true
 
 # Build settings
 # Don't change these variables
