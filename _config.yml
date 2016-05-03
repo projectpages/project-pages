@@ -30,6 +30,11 @@ prose:
   media: 'img'
   metadata:
     _posts:
+      - name: "subtitle"
+        field:
+          element: "text"
+          label: "Sub-Title (Short Description)"
+          value: ""
       - name: "layout"
         field:
           element: "select"
@@ -42,6 +47,10 @@ prose:
               value: "slide"
             - name: "Projector"
               value: "projector"
+            - name: "Notebook"
+              value: "notebook"
+            - name: "Ply Surface"
+              value: "plysurface"
       - name: "title"
         field:
           element: "text"
@@ -55,7 +64,7 @@ prose:
       - name: "tags"
         field:
           element: "text"
-          label: "Tags (seperate with a comma)"
+          label: "Tags (seperate with whitespace)"
           value: ""
       - name: "horizontal"
         field:
@@ -105,4 +114,8 @@ prose:
               value: "fade"
             - name: "None"
               value: "none"             
-
+      - name: "visualworkflow"
+        field:
+          element: "checkbox"
+          label: "Visual Workflow Chart (Some Layouts)"
+          value: "true"
