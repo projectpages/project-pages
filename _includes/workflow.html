@@ -104,7 +104,7 @@ end
 {% assign BlocksLength = Blocks | size %}
 
 <!-- Strip Each Line of Whitespace and Only Keep Lines Longer than 3 -->
-<div class="mermaid" style="margin-left:100px">
+<div class="mermaid" id="mermaidworkflow" style="margin-left:100px">
 {% for line in (0..BlocksLength) %}{% assign BlockSize = Blocks[line] | size %}{% if BlockSize > 3 %}
 {{ Blocks[line] | strip | strip_newlines }}
 {% endif %}{% endfor %}

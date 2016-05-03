@@ -3,7 +3,7 @@ layout:     post
 title:      New Matlab Script
 date:       2016-05-02 
 author:     Ahmet Cecen
-tags: 		matlab workflows
+tags: 		matlab workflows template
 subtitle:   Some Short Description of the Script
 visualworkflow: true
 ---
