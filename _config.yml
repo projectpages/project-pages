@@ -2,6 +2,8 @@
 
 title: Project Pages
 header-img: img/home-bg.jpg
+headercolor: "#FFFFFF"
+logo: /project-pages/img/logos/Project-Pages-New-Logo-Inverted.png
 email: your-email@yourdomain.com
 description: "Write your site description here. It will be used as your sites meta description as well!"
 baseurl: "/project-pages"
@@ -10,7 +12,7 @@ github_username:  matin-hub
 project_repository: project-pages
 disqus_shortname: project-pages
 g-analytics: UA-75881392-1
-  
+
 # Build settings
 # Don't change these variables
 gems: [jekyll-paginate]
@@ -22,12 +24,17 @@ exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
 
 # Prose Settings
 prose:
-  rooturl: '_posts'
+  ignore: ['feed.xml', '/stl', '/ply', '/js', '/plugin', '/lib', '/projectors', '_layouts', '/_includes', 'Gruntfile.js', 'package.json', 'proselinks.jsonp', 'ppanchor.matin', '.gitignore', '/search', '/css', '/img', 'favicon.png']
   siteurl: 'http://ahmetcecen.github.io/project-pages/'
   ispp: true
   media: 'img'
   metadata:
     _posts:
+      - name: "subtitle"
+        field:
+          element: "text"
+          label: "Sub-Title (Short Description)"
+          value: ""
       - name: "layout"
         field:
           element: "select"
@@ -40,6 +47,10 @@ prose:
               value: "slide"
             - name: "Projector"
               value: "projector"
+            - name: "Notebook"
+              value: "notebook"
+            - name: "Ply Surface"
+              value: "plysurface"
       - name: "title"
         field:
           element: "text"
@@ -53,7 +64,7 @@ prose:
       - name: "tags"
         field:
           element: "text"
-          label: "Tags (seperate with a comma)"
+          label: "Tags (seperate with whitespace)"
           value: ""
       - name: "horizontal"
         field:
@@ -103,4 +114,8 @@ prose:
               value: "fade"
             - name: "None"
               value: "none"             
-
+      - name: "visualworkflow"
+        field:
+          element: "checkbox"
+          label: "Visual Workflow Chart (Some Layouts)"
+          value: "true"

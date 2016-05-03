@@ -9,7 +9,9 @@ layout: default
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <div class="site-heading" style="padding: 75px 0">
 					{% if page.url == '/' %}
-					<img src= "/project-pages/img/logos/Project-Pages-New-Logo-Inverted.png" style="height: 150px">
+					{% if site.logo %}
+					<img src= "{{ site.logo }}" style="height: 150px">
+					{% endif %}	
 					{% else %}{% endif %}	
                     <h1>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>
                     <hr class="small">
