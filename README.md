@@ -1,3 +1,3 @@
 #Project Pages
 
-Project Pages is Jekyll Template specifically geared towards collaborative science. For more information, click [here](http://matin-hub.github.io/ppguide/).
+Project Pages is Jekyll Template specifically geared towards collaborative science. For more information, click [here](https://github.com/projectpages/project-pages/wiki/Project-Pages---Guides,-Tips,-Discussions).
