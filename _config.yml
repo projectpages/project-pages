@@ -1,13 +1,18 @@
 # Site settings
-
 title: Project Pages
+description: "An Integrated Scientific Blogging Template"
+url: "http://projectpages.github.io"
+
+
+
+
+# Secondary Parameters
+baseurl: "/project-pages"
 header-img: img/home-bg.jpg
 headercolor: "#FFFFFF"
 logo: /project-pages/img/logos/Project-Pages-New-Logo-Inverted.png
-email: ahmetcecen@gmail.com
-description: "An Integrated Scientific Blogging Template"
-baseurl: "/project-pages"
-url: "http://projectpages.github.io"
+
+# Tertiary Parameters
 github_username:  projectpages
 project_repository: project-pages
 disqus_shortname: project-pages
@@ -15,13 +20,23 @@ g-analytics: UA-75881392-1
 altmetric: true
 
 # Build settings
-# Don't change these variables
 gems: [jekyll-paginate]
 markdown: kramdown
 highlighter: rouge
 permalink: pretty
-paginate: 5
+paginate: 10
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+
+# Jekyll Settings
+
+defaults:
+  -
+    scope:
+      path: "projects"
+      type: "pages"
+    values:
+      layout: "project"
+      header-img: "img/home-bg.jpg"
 
 # Prose Settings
 prose:
@@ -30,6 +45,17 @@ prose:
   ispp: true
   media: 'img'
   metadata:
+    projects:
+      - name: "description:"
+        field:
+          element: "text"
+          label: "Description"
+          value: ""
+      - name: "category"
+        field:
+          element: "text"
+          label: "Project"
+          value: ""           
     _posts:
       - name: "subtitle"
         field:
@@ -67,6 +93,11 @@ prose:
           element: "text"
           label: "Tags (seperate with whitespace)"
           value: ""
+      - name: "category"
+        field:
+          element: "text"
+          label: "Project"
+          value: ""    
       - name: "horizontal"
         field:
           element: "hidden"

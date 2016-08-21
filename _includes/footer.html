@@ -42,6 +42,24 @@
                         </a>
                     </li>
                     {% endif %}
+					{% if site.github_username == "projectpages" %}
+                    <li>
+                        <a href="https://github.com/projectpages/project-pages/issues">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-exclamation fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+					<li>
+                        <a href="https://github.com/projectpages/project-pages/fork">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-code-fork fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    {% endif %}				
                 </ul>
                 <p class="copyright text-muted">Copyright &copy; {{ site.title }} {{ site.time | date: '%Y' }}. Project-Pages is a tool developed under <a href="http://mined.gatech.edu/matin">MATIN</a>.</p>
             </div>
