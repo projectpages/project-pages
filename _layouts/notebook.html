@@ -184,8 +184,8 @@ layout: default
 {% endcapture %}
 
 {% if page.visualworkflow == true %}
-<script src="/project-pages/js/mermaid.min.js"></script>
-<link rel="stylesheet" href="/project-pages/css/mermaid.forest.css">
+<script src="{{ site.baseurl }}/js/mermaid.min.js"></script>
+<link rel="stylesheet" href="{{ site.baseurl }}/css/mermaid.forest.css">
 <script>mermaid.initialize({startOnLoad:true});</script>
 
 <!-- Get Content for This Post and Split at Pound Signs to Find Headers -->

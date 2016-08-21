@@ -8,10 +8,10 @@ subtitle:    	Some Short Description of Presentation
 theme:		night # default/beige/blood/moon/night/serif/simple/sky/solarized
 trans:		default # default/cube/page/concave/zoom/linear/fade/none
 
-horizontal:	</section></section><section markdown="1" data-background="http://matin-hub.github.io/project-pages/img/slidebackground.png"><section markdown="1">
+horizontal:	</section></section><section markdown="1" data-background="http://projectpages.github.io/project-pages/img/slidebackground.png"><section markdown="1">
 vertical:		</section><section markdown="1">
 ---
-<section markdown="1" data-background="http://matin-hub.github.io/project-pages/img/slidebackground.png"><section markdown="1">
+<section markdown="1" data-background="http://projectpages.github.io/project-pages/img/slidebackground.png"><section markdown="1">
 ## {{ page.title }}
 
 <hr>
@@ -96,7 +96,7 @@ $$ A = \pi r^2 $$
 
 Alt-Click to zoom.
 
-![Description](http://matin-hub.github.io/project-pages/img/Logo_Fairy_Tail_right.png)
+![Description](http://projectpages.github.io/project-pages/img/Logo_Fairy_Tail_right.png)
 
 {{ page.horizontal }}
 
@@ -138,7 +138,7 @@ Now, you CAN write in HTML using this template. If you want to create HTML prese
 
 ## STL
 
-<div align="center"><script src="https://embed.github.com/view/3d/matin-hub/project-pages/gh-pages/stl/test.stl"></script></div>
+<div align="center"><script src="https://embed.github.com/view/3d/projectpages/project-pages/gh-pages/stl/test.stl"></script></div>
 
 {{ page.horizontal }}
 

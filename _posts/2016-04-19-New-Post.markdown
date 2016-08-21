@@ -57,7 +57,7 @@ subtitle:  	Some Short Description of Post
 
 Hold your pointer clicked over the image to expand the view.
 
-![Description](http://matin-hub.github.io/project-pages/img/Logo_Fairy_Tail_right.png)
+![Description](http://projectpages.github.io/project-pages/img/Logo_Fairy_Tail_right.png)
 
 ## Code
 
@@ -96,7 +96,7 @@ Can write the whole post or sections in HTML for very specific needs. [For the a
 
 # Advanced Functionality
 
-Head over to the [documentation page](http://matin-hub.github.io/ppguide/) for tutorials on some basic html formatting and some extensions you can use for cool stuff like interactive 3D visualizations.
+Head over to the [documentation page](http://projectpages.github.io/ppguide/) for tutorials on some basic html formatting and some extensions you can use for cool stuff like interactive 3D visualizations.
 
 ## Color and Alignment
 
@@ -112,6 +112,6 @@ Head over to the [documentation page](http://matin-hub.github.io/ppguide/) for t
 
 ## STL
 
-<div align="center"><script src="https://embed.github.com/view/3d/matin-hub/project-pages/gh-pages/stl/test.stl"></script></div>
+<div align="center"><script src="https://embed.github.com/view/3d/projectpages/project-pages/gh-pages/stl/test.stl"></script></div>
 
 
