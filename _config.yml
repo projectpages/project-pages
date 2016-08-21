@@ -53,12 +53,22 @@ prose:
   media: 'img'
   metadata:
     "":
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
+          value: ""
       - name: "description:"
         field:
           element: "text"
           label: "Description"
           value: ""
     projects:
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
+          value: ""
       - name: "description:"
         field:
           element: "text"
