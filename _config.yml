@@ -37,13 +37,6 @@ defaults:
     values:
       layout: "project"
       header-img: "img/home-bg.jpg"
-  -
-    scope:
-      path: ""
-      type: "pages"
-    values:
-      layout: "page"
-      header-img: "img/home-bg.jpg"
 
 # Prose Settings
 prose:
