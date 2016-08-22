@@ -53,12 +53,22 @@ prose:
   media: 'img'
   metadata:
     "":
+      - name: "layout"
+        field:
+          element: "text"
+          label: "Layout"
+          value: "page"
       - name: "title"
         field:
           element: "text"
           label: "Title"
           value: ""
-      - name: "description:"
+      - name: "description"
+        field:
+          element: "text"
+          label: "Description"
+          value: ""
+      - name: "description"
         field:
           element: "text"
           label: "Description"
@@ -69,7 +79,7 @@ prose:
           element: "text"
           label: "Title"
           value: ""
-      - name: "description:"
+      - name: "description"
         field:
           element: "text"
           label: "Description"
