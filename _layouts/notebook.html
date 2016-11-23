@@ -170,11 +170,15 @@ layout: default
 {{ cell.source }}
 {% endhighlight %}
 
-{% for output in cell.outputs[0].data  %}
+{% for output in cell.outputs  %}
 
-{% if output[0] contains "image/"%}
-<img src="data:{{output[0]}};base64, {{ output[1] }}">
+{% for outputitem in output.data %}
+
+{% if outputitem[0] contains "image/" %}
+<img src="data:{{outputitem[0]}};base64, {{ outputitem[1] }}">
 {% endif %}
+
+{% endfor %}
 
 {% endfor %}
 
