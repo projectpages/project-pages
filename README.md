@@ -17,3 +17,11 @@ Go to:
 GitHub account -> Your Profile -> Repositories -> Project-Pages/Your Repo -> Pluging -> Markdown 
 
 and clicking on the files, then clicking on the "thrash can / delete this file" icon on the top right corner of the file.
+
+Finally, you need to change the `LICENSES.md` at:
+
+GitHub account -> Your Profile -> Repositories -> Project-Pages/Your Repo
+
+to `License.md` by clicking on the file and changing the name.
+
+The fixes are already implemented here so new forks won't have a problem, and old forks should be able merge without conflict if they know how to.
