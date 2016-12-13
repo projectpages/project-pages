@@ -12,4 +12,8 @@ It used to be that if a markdown file didn't have `---` frontmatter at the begin
 ## FIX:ss
 Go to:
 
-`project-pages/plugin/markdown/` or `yourreponame/plugin/markdown/` and deletesas
+`project-pages/plugin/markdown/` or `yourreponame/plugin/markdown/` and delete `example.html` and `example.md` files. This can be done graphically for the non-Git-savvy by simply going to your:
+
+GitHub account -> Your Profile -> Repositories -> Project-Pages/Your Repo -> Pluging -> Markdown 
+
+and clicking on the files, then clicking on the "thrash can / delete this file" icon on the top right corner of the file.
