@@ -9,8 +9,9 @@ If you have seemingly random pages popping up on your Nav Bar recently, this is 
 ## CAUSE:
 It used to be that if a markdown file didn't have `---` frontmatter at the beginning, it wasn't rendered as a page. This was changed very recently (like in the last 2 days) so that every markdown file anywhere no matter what gets rendered as a page.  
 
-## FIX:ss
-Go to:
+## FIX:
+
+1) Go to:
 
 `project-pages/plugin/markdown/` or `yourreponame/plugin/markdown/` and delete `example.html` and `example.md` files. This can be done graphically for the non-Git-savvy by simply going to your:
 
@@ -18,7 +19,7 @@ GitHub account -> Your Profile -> Repositories -> Project-Pages/Your Repo -> Plu
 
 and clicking on the files, then clicking on the "thrash can / delete this file" icon on the top right corner of the file.
 
-Finally, you need to change the `LICENSES.md` at:
+2) You need to change the `LICENSES.md` at:
 
 GitHub account -> Your Profile -> Repositories -> Project-Pages/Your Repo
 
