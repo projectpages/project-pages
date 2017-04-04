@@ -1,4 +1,4 @@
-#Project Pages
+# Project Pages
 
 Project Pages is Jekyll Template specifically geared towards collaborative science. For more information, click [here](https://github.com/projectpages/project-pages/wiki/).
 
@@ -13,16 +13,16 @@ It used to be that if a markdown file didn't have `---` frontmatter at the begin
 
 1) Go to:
 
-`project-pages/plugin/markdown/` or `yourreponame/plugin/markdown/` and delete `example.html` and `example.md` files. This can be done graphically for the non-Git-savvy by simply going to your:
+`project-pages/plugin/projector/` or `yourreponame/plugin/projector/` and delete the `README.md` file. This can be done graphically for the non-Git-savvy by simply going to your:
 
-GitHub account -> Your Profile -> Repositories -> Project-Pages/Your Repo -> Pluging -> Markdown 
+GitHub account -> Your Profile -> Repositories -> Project-Pages/Your Repo -> Plugin -> projector 
 
 and clicking on the files, then clicking on the "thrash can / delete this file" icon on the top right corner of the file.
 
-2) You need to change the `LICENSES.md` at:
+2) Go to:
 
-GitHub account -> Your Profile -> Repositories -> Project-Pages/Your Repo
+`project-pages/css/theme/` or `yourreponame/css/theme/` and delete the `README.md` file. This can be done graphically for the non-Git-savvy by simply going to your:
 
-to `License.md` by clicking on the file and changing the name.
+GitHub account -> Your Profile -> Repositories -> Project-Pages/Your Repo -> Plugin -> projector 
 
-The fixes are already implemented here so new forks won't have a problem, and old forks should be able merge without conflict if they know how to.
+and clicking on the files, then clicking on the "thrash can / delete this file" icon on the top right corner of the file.
