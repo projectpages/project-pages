@@ -156,3 +156,5 @@ prose:
           element: "checkbox"
           label: "Visual Workflow Chart (Some Layouts)"
           value: "true"
+
+theme: jekyll-theme-cayman
