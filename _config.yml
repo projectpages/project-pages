@@ -10,7 +10,7 @@ url: "https://mcgen.github.io"
 baseurl: 
 header-img: img/home-bg.jpg
 headercolor: "#FFFFFF"
-logo: /mcgen/img/logos/Project-Pages-New-Logo-Inverted.png
+logo: /project-pages/img/logos/Project-Pages-New-Logo-Inverted.png
 
 # Tertiary Parameters
 github_username:  projectpages
