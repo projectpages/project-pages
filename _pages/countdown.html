@@ -1,0 +1,51 @@
+---
+#layout: page
+permalink: /countdown/
+mark: page
+---
+<body>
+    <h1> RISS Summer Program</h1>
+    <h3 id=today></h3>
+    <h3 id=till_mid></h3>
+    <h2> Days Left (until August 12) </h2>
+    <h3 id=days_left></h3>
+
+    <h2>Days Gone (since June 1)</h2>
+    <h3 id=days_done></h3>
+
+    <script>
+    var begin = new Date("June 1, 2017")
+    var today = new Date();
+    var finish = new Date("August 12, 2017")
+
+    var days_left = Math.round((finish-today)/(1000*60*60*24));
+    var total_days = Math.round((begin-finish)/(1000*60*60*24));
+    var days_done = Math.round((today - begin)/(1000*60*60*24));
+
+
+    // var nday = today.getDay();
+    var nhour = today.getHours();
+    var nmin = today.getMinutes();
+
+    var midHour = 23;
+    var midMin = 59;
+
+    var hourToMid = midHour - nhour;
+    var minToMid = midMin - nmin;
+    var displayTillMid = hourToMid.toString() + " hrs    "+ minToMid.toString() + " mins till Midnight";
+
+
+
+
+
+
+    document.getElementById("days_left").innerHTML = days_left;
+    document.getElementById("days_done").innerHTML = days_done;
+    document.getElementById("till_mid").innerHTML = displayTillMid;
+    displayToday = today.toString();
+    displayToday = displayToday.substring(3);
+    displayToday = displayToday.substring(0, displayToday.length-15);
+    document.getElementById("today").innerHTML = displayToday;
+    </script>
+
+</body>

@@ -25,6 +25,9 @@ permalink: pretty
 paginate: 10
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
 
+include:
+    - _pages
+
 # Jekyll Settings
 
 defaults:
