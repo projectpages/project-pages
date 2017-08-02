@@ -5,5 +5,6 @@ description: "Summer research as part of the Robotics Institute Summer Scholars 
 header-img: "img/riss/little_and_big.jpg"
 headercolor: "#FFFFFF"
 category: riss
+permalink: "/ballbot/"
 ---
 

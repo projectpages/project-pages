@@ -14,6 +14,7 @@ mark: page
     <h3 id=days_done></h3>
 
     <script>
+    setInterval(function(){
     var begin = new Date("June 1, 2017")
     var today = new Date();
     var finish = new Date("August 12, 2017")
@@ -26,17 +27,17 @@ mark: page
     // var nday = today.getDay();
     var nhour = today.getHours();
     var nmin = today.getMinutes();
+    var nsec = today.getSeconds();
 
     var midHour = 23;
     var midMin = 59;
+	var midSec = 59;
 
     var hourToMid = midHour - nhour;
     var minToMid = midMin - nmin;
+    var secToMid = midSec - nsec;
+    //var displayTillMid = hourToMid.toString() + " hrs    "+ minToMid.toString() + " mins   " + secToMid.toString() + " seconds till Midnight";
     var displayTillMid = hourToMid.toString() + " hrs    "+ minToMid.toString() + " mins till Midnight";
-
-
-
-
 
 
     document.getElementById("days_left").innerHTML = days_left;
@@ -46,6 +47,7 @@ mark: page
     displayToday = displayToday.substring(3);
     displayToday = displayToday.substring(0, displayToday.length-15);
     document.getElementById("today").innerHTML = displayToday;
+    }, 1000);
     </script>
 
 </body>
