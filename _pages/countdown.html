@@ -4,20 +4,20 @@ permalink: /countdown/
 mark: page
 ---
 <body>
-    <h1> RISS Summer Program</h1>
+    <h1> Final exams over </h1>
     <h3 id=today></h3>
     <h3 id=till_mid></h3>
-    <h2> Days Left (until August 12) </h2>
+    <h2> Days Left (until December 15) </h2>
     <h3 id=days_left></h3>
 
-    <h2>Days Gone (since June 1)</h2>
+    <h2>Days Gone (since August 17)</h2>
     <h3 id=days_done></h3>
 
     <script>
     setInterval(function(){
-    var begin = new Date("June 1, 2017")
+    var begin = new Date("August 17, 2017")
     var today = new Date();
-    var finish = new Date("August 12, 2017")
+    var finish = new Date("December 15, 2017")
 
     var days_left = Math.round((finish-today)/(1000*60*60*24));
     var total_days = Math.round((begin-finish)/(1000*60*60*24));
