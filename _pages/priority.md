@@ -1,5 +1,4 @@
 ---
-#layout: page
 permalink: /priority/
 mark: page
 ---
@@ -8,7 +7,7 @@ mark: page
 Anything not in this list should not be time wasted on
 <div id="priorities">
     <ul>
-        <li>Learn deep learning</li>
+        <li>Learn deep learning (deep reinforcement learning)</li>
         <li>Keep scholarship</li>
         <li>Make the Utah robotics team successful</li>
         <li>Work on robotics and coding projects</li>
