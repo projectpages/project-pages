@@ -1,17 +1,23 @@
 # Site settings
-title: Matthew Wilson 
-description: "Junior year computer engineering student at University of Utah"
+title: Matthew Wilson
+description: "Junior computer engineering student at the University of Utah"
 url: "https://matwilso.github.io"
 
 
 # Secondary Parameters
 baseurl: ""
-header-img: img/fl_trees.jpg
-headercolor: "#FFFFFF"
+header-img: img/uofu.jpg
+headercolor: "white"
 logo: /img/logos/melon.png
+page_links:
+    - home
+    # -
+
+
 
 # Tertiary Parameters
 github_username:  matwilso
+twitter_username:  matwilso
 project_repository: matwilso.github.io
 disqus_shortname: "https-matwilso-github-io"
 g-analytics: "UA-89794815-1"
@@ -37,7 +43,6 @@ defaults:
       type: "pages"
     values:
       layout: "project"
-      header-img: "img/urmp/emcee_nasa_sand_filtered.jpg"
 
 # Prose Settings
 prose:
@@ -61,7 +66,7 @@ prose:
         field:
           element: "text"
           label: "Project"
-          value: ""           
+          value: ""
     _posts:
       - name: "subtitle"
         field:
@@ -103,7 +108,7 @@ prose:
         field:
           element: "text"
           label: "Project"
-          value: ""    
+          value: ""
       - name: "horizontal"
         field:
           element: "hidden"
@@ -127,13 +132,13 @@ prose:
             - name: "Blood"
               value: "blood"
             - name: "Moon"
-              value: "moon"          
+              value: "moon"
             - name: "Night"
               value: "night"
             - name: "Sky"
               value: "sky"
             - name: "Solarized"
-              value: "solarized"             
+              value: "solarized"
       - name: "trans"
         field:
           element: "select"
@@ -145,13 +150,13 @@ prose:
             - name: "Page"
               value: "page"
             - name: "Concave"
-              value: "concave"          
+              value: "concave"
             - name: "Linear"
               value: "linear"
             - name: "Fade"
               value: "fade"
             - name: "None"
-              value: "none"             
+              value: "none"
       - name: "visualworkflow"
         field:
           element: "checkbox"
