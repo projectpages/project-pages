@@ -13,21 +13,22 @@
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" {% if page.layout == 'default' %}style="background-color: grey;"{% endif %}>
             <ul class="nav navbar-nav navbar-right">
                 <li>
                     <a href="{{ site.baseurl }}/">Home</a>
                 </li>
-				{% for page in site.pages %}{% if page.url contains "projects/" %}{% if page.title %}
+				{% for page in site.pages %}{% if page.url contains "projects/" %}{% unless page.mark contains "page" %}
                 <li>
                     <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
                 </li>
-                {% endif %}{% endif %}{% endfor %}
-                {% for page in site.pages %}{% if page.url contains "projects/" %}{% else %}{% if page.title %}
+				{% endunless %}{% endif %}{% endfor %}
+
+                {% for page in site.pages %}{% if page.url contains "projects/" %}{% else %}{% if page.title %}{% unless page.mark contains "page" %}
                 <li>
                     <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
                 </li>
-                {% endif %}{% endif %}{% endfor %}
+				{% endunless %}{% endif %}{% endif %}{% endfor %}
             </ul>
         </div>
         <!-- /.navbar-collapse -->

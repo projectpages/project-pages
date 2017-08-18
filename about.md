@@ -1,9 +1,14 @@
 ---
-layout: page
+layout: default
 title: "About"
-description: "Why use Project Pages?"
-header-img: "img/home-bg.jpg"
+description: ""
+header-img: "img/uofu.jpg"
+header-img-darken: 0.5
 ---
 
-Project Pages is a research blog tool that allows you to quickly show your latest results to an advisor, collaborators or your mom.
-	
+<a href="/img/me.jpg"><img src="/img/me.jpg" alt="me" width="360"></a>
+
+
+I like working on robotics.
+
+Right now, I am in my junior year of computer engineering at the University of Utah.

@@ -1,0 +1,53 @@
+---
+#layout: page
+permalink: /countdown/
+mark: page
+---
+<body>
+    <h1> Final exams over </h1>
+    <h3 id=today></h3>
+    <h3 id=till_mid></h3>
+    <h2> Days Left (until December 15) </h2>
+    <h3 id=days_left></h3>
+
+    <h2>Days Gone (since August 17)</h2>
+    <h3 id=days_done></h3>
+
+    <script>
+    setInterval(function(){
+    var begin = new Date("August 17, 2017")
+    var today = new Date();
+    var finish = new Date("December 15, 2017")
+
+    var days_left = Math.round((finish-today)/(1000*60*60*24));
+    var total_days = Math.round((begin-finish)/(1000*60*60*24));
+    var days_done = Math.round((today - begin)/(1000*60*60*24));
+
+
+    // var nday = today.getDay();
+    var nhour = today.getHours();
+    var nmin = today.getMinutes();
+    var nsec = today.getSeconds();
+
+    var midHour = 23;
+    var midMin = 59;
+	var midSec = 59;
+
+    var hourToMid = midHour - nhour;
+    var minToMid = midMin - nmin;
+    var secToMid = midSec - nsec;
+    //var displayTillMid = hourToMid.toString() + " hrs    "+ minToMid.toString() + " mins   " + secToMid.toString() + " seconds till Midnight";
+    var displayTillMid = hourToMid.toString() + " hrs    "+ minToMid.toString() + " mins till Midnight";
+
+
+    document.getElementById("days_left").innerHTML = days_left;
+    document.getElementById("days_done").innerHTML = days_done;
+    document.getElementById("till_mid").innerHTML = displayTillMid;
+    displayToday = today.toString();
+    displayToday = displayToday.substring(3);
+    displayToday = displayToday.substring(0, displayToday.length-15);
+    document.getElementById("today").innerHTML = displayToday;
+    }, 1000);
+    </script>
+
+</body>
