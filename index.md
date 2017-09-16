@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Home"
+title: "HKU-FACE"
 header-img: "img/home-bg.jpg"
 
 ---

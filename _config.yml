@@ -7,13 +7,13 @@ url: "https://projectpages.github.io"
 
 
 # Secondary Parameters
-baseurl: "/project-pages"
+baseurl: ""
 header-img: img/home-bg.jpg
 headercolor: "#FFFFFF"
 logo: /project-pages/img/logos/Project-Pages-New-Logo-Inverted.png
 
 # Tertiary Parameters
-github_username:  projectpages
+github_username:  hkuface
 project_repository: project-pages
 disqus_shortname: project-pages
 g-analytics: UA-75881392-1
