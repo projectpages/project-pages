@@ -1,5 +1,5 @@
 ---
-layout:     	post
+layout:     	default
 title:     		Project Plan
 author:     	WANG Haicheng
 tags:           plan
