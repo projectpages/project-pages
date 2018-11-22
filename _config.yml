@@ -16,8 +16,8 @@ logo: /justinpriest.github.io/img/logos/Project-Pages-New-Logo-Inverted.png
 github_username:  justinpriest
 project_repository: justinpriest.github.io
 disqus_shortname: project-pages
-g-analytics: UA-75881392-1
-altmetric: true
+g-analytics: 
+altmetric: false
 
 # Build settings
 gems: [jekyll-paginate]
