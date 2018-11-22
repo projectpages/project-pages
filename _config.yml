@@ -7,7 +7,7 @@ url: "https://justinpriest.github.io"
 
 
 # Secondary Parameters
-baseurl: "/justinpriest.github.io"
+# baseurl: "/justinpriest.github.io"
 header-img: img/home-bg.jpg
 headercolor: "#FFFFFF"
 logo: /justinpriest.github.io/img/logos/Project-Pages-New-Logo-Inverted.png
