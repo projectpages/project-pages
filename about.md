@@ -1,9 +1,8 @@
 ---
 layout: page
 title: "About"
-description: "Why use Project Pages?"
+description: "Where did I come from?"
 header-img: "img/home-bg.jpg"
 ---
 
-Project Pages is a research blog tool that allows you to quickly show your latest results to an advisor, collaborators or your mom.
-	
+Justin Priest is a fisheries graduate student, interested in modeling ecosystem dynamics. 	
