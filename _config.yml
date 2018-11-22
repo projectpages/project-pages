@@ -1,20 +1,20 @@
 # Site settings
 title: Project Pages
 description: "An Integrated Scientific Blogging Template"
-url: "https://projectpages.github.io"
+url: "https://justinpriest.github.io"
 
 
 
 
 # Secondary Parameters
-baseurl: "/project-pages"
+baseurl: "/justinpriest.github.io"
 header-img: img/home-bg.jpg
 headercolor: "#FFFFFF"
-logo: /project-pages/img/logos/Project-Pages-New-Logo-Inverted.png
+logo: /justinpriest.github.io/img/logos/Project-Pages-New-Logo-Inverted.png
 
 # Tertiary Parameters
-github_username:  projectpages
-project_repository: project-pages
+github_username:  justinpriest
+project_repository: justinpriest.github.io
 disqus_shortname: project-pages
 g-analytics: UA-75881392-1
 altmetric: true
