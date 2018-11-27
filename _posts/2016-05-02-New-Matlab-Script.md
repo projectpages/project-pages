@@ -5,11 +5,9 @@ author:     Ahmet Cecen
 tags: 		matlab workflows template
 subtitle:   Some Short Description of the Script
 category:  project1
-visualworkflow: true
+
 ---
-{% if page.visualworkflow == true %}
-   {% include workflowmatlab.html %}
-{% endif %}   
+
    
 
 <!--
