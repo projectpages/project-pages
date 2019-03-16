@@ -26,3 +26,4 @@ and clicking on the files, then clicking on the "thrash can / delete this file" 
 GitHub account -> Your Profile -> Repositories -> Project-Pages/Your Repo -> Plugin -> projector 
 
 and clicking on the files, then clicking on the "thrash can / delete this file" icon on the top right corner of the file.
+ 
