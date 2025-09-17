@@ -1,21 +1,19 @@
 # Site settings
-title: Project Pages
-description: "An Integrated Scientific Blogging Template"
-url: "https://projectpages.github.io"
-
-
-
+title: Low-Code AI Pipeline
+description: "A collaborative community initiative dedicated to researching and developing a domain-specific low-code AI pipeline platform."
+url: "https://lowcodeai.github.io"
 
 # Secondary Parameters
-baseurl: "/project-pages"
-header-img: img/home-bg.jpg
+baseurl: "/web"
+header-img: img/web-bar.png
 headercolor: "#FFFFFF"
-logo: /project-pages/img/logos/Project-Pages-New-Logo-Inverted.png
+# Removed template logo
+# logo: /web/img/logos/Project-Pages-New-Logo-Inverted.png
 
 # Tertiary Parameters
-github_username:  projectpages
-project_repository: project-pages
-disqus_shortname: project-pages
+github_username: lowcodeai
+project_repository: web
+disqus_shortname: web
 g-analytics: UA-75881392-1
 altmetric: true
 
@@ -25,13 +23,12 @@ markdown: kramdown
 highlighter: rouge
 permalink: pretty
 paginate: 10
-exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+exclude: ["less", "node_modules", "Gruntfile.js", "package.json", "README.md"]
 
 # Jekyll Settings
 
 defaults:
-  -
-    scope:
+  - scope:
       path: "projects"
       type: "pages"
     values:
@@ -40,10 +37,37 @@ defaults:
 
 # Prose Settings
 prose:
-  ignore: ['feed.xml', '/stl', '/ply', '/js', '/plugin', '/lib', '/projectors', '_layouts', '/_includes', 'Gruntfile.js', 'package.json', 'proselinks.jsonp', 'ppanchor.matin', '.gitignore', '/search', '/css', '/img', 'favicon.png','_data/*.json','LICENSES.md','README.md','colorscheme.scss','members.html','mentions.html','index.html']
-  siteurl: 'http://projectpages.github.io/project-pages/'
+  ignore:
+    [
+      "feed.xml",
+      "/stl",
+      "/ply",
+      "/js",
+      "/plugin",
+      "/lib",
+      "/projectors",
+      "_layouts",
+      "/_includes",
+      "Gruntfile.js",
+      "package.json",
+      "proselinks.jsonp",
+      "ppanchor.matin",
+      ".gitignore",
+      "/search",
+      "/css",
+      "/img",
+      "favicon.png",
+      "_data/*.json",
+      "LICENSES.md",
+      "README.md",
+      "colorscheme.scss",
+      "members.html",
+      "mentions.html",
+      "index.html",
+    ]
+  siteurl: "http://projectpages.github.io/project-pages/"
   ispp: true
-  media: 'img'
+  media: "img"
   metadata:
     projects:
       - name: "title"
@@ -60,7 +84,7 @@ prose:
         field:
           element: "text"
           label: "Project"
-          value: ""           
+          value: ""
     _posts:
       - name: "subtitle"
         field:
@@ -102,7 +126,7 @@ prose:
         field:
           element: "text"
           label: "Project"
-          value: ""    
+          value: ""
       - name: "horizontal"
         field:
           element: "hidden"
@@ -126,13 +150,13 @@ prose:
             - name: "Blood"
               value: "blood"
             - name: "Moon"
-              value: "moon"          
+              value: "moon"
             - name: "Night"
               value: "night"
             - name: "Sky"
               value: "sky"
             - name: "Solarized"
-              value: "solarized"             
+              value: "solarized"
       - name: "trans"
         field:
           element: "select"
@@ -144,13 +168,13 @@ prose:
             - name: "Page"
               value: "page"
             - name: "Concave"
-              value: "concave"          
+              value: "concave"
             - name: "Linear"
               value: "linear"
             - name: "Fade"
               value: "fade"
             - name: "None"
-              value: "none"             
+              value: "none"
       - name: "visualworkflow"
         field:
           element: "checkbox"

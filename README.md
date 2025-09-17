@@ -1,28 +1,47 @@
-# Project Pages
+# Low-Code AI Pipeline Development
 
-Project Pages is Jekyll Template specifically geared towards collaborative science. For more information, click [here](https://github.com/projectpages/project-pages/wiki/).
+## Overview
 
-# Nav Bar Jumbles
+This project focuses on the development of a **low-code platform** for designing and generating AI pipelines. The objective is to improve the efficiency and accessibility of AI/ML pipeline development by providing a framework that simplifies the process for researchers and practitioners, particularly those without extensive programming or AI expertise.
 
-If you have seemingly random pages popping up on your Nav Bar recently, this is due to the fact that GitHub/Jekyll changed a fundemental rule they used to render pages. 
+## Research Focus
 
-## CAUSE:
-It used to be that if a markdown file didn't have `---` frontmatter at the beginning, it wasn't rendered as a page. This was changed very recently (like in the last 2 days) so that every markdown file anywhere no matter what gets rendered as a page.  
+Researchers in various scientific domains rely on AI and Machine Learning (ML) for data analysis and decision-making. However, developing AI/ML pipelines tailored to specific domain requirements remains a challenge. This project aims to:
 
-## FIX:
+- **Analyze and model AI pipelines** from different research fields.
+- **Identify and formalize common and variant features** across AI pipelines.
+- **Develop a low-code solution** to automate the generation of AI pipelines.
+- **Validate the solution** in collaboration with researchers from various disciplines.
 
-1) Go to:
+## Features
 
-`project-pages/plugin/projector/` or `yourreponame/plugin/projector/` and delete the `README.md` file. This can be done graphically for the non-Git-savvy by simply going to your:
+- **Low-Code Interface**: A user-friendly environment to create AI pipelines with minimal coding.
+- **AI Pipeline Modeling**: Standardized representation of AI workflows.
+- **Automation**: Auto-generation of AI/ML workflows based on user-defined intentions.
+- **Domain-Specific Adaptability**: Customizable for various research fields.
 
-GitHub account -> Your Profile -> Repositories -> Project-Pages/Your Repo -> Plugin -> projector 
+<!-- ## Technologies Used
 
-and clicking on the files, then clicking on the "thrash can / delete this file" icon on the top right corner of the file.
+- **Programming Languages**: Python, JavaScript
+- **AI/ML Frameworks**: TensorFlow, PyTorch, Scikit-Learn
+- **Low-Code Development**: Model-Driven Engineering (MDE)
+- **Deployment**: Docker, Kubernetes
+- **Version Control**: GitHub -->
 
-2) Go to:
+## Contact
 
-`project-pages/css/theme/` or `yourreponame/css/theme/` and delete the `README.md` file. This can be done graphically for the non-Git-savvy by simply going to your:
+For inquiries, please contact:
 
-GitHub account -> Your Profile -> Repositories -> Project-Pages/Your Repo -> Plugin -> projector 
+📩 **Jessie Galasso-Carbonnel**  
+📧 [jessie.galasso-carbonnel@mcgill.ca](mailto:jessie.galasso-carbonnel@mcgill.ca)  
+📍 Room 535, McConnell Engineering Building, 3480 University, Montreal, QC H3A 0E9, Canada
 
-and clicking on the files, then clicking on the "thrash can / delete this file" icon on the top right corner of the file.
+## How to Contribute
+
+We welcome contributions! Follow these steps:
+
+1. **Fork the repository** on GitHub.
+2. **Clone your fork** locally:
+   ```sh
+   git clone https://github.com/your-username/low-code-ai-pipeline.git
+   ```

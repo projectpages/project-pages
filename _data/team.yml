@@ -1,0 +1,61 @@
+# Members
+
+- name: Ahmet Cecen
+  role: Data Scientist / Materials Informatics
+  img: https://avatars1.githubusercontent.com/u/7231251?v=3&s=460
+  github: ahmetcecen
+  gplus: https://plus.google.com/+AhmetCecen-GPlus
+  bio: Ahmet Cecen is currently pursuing a PhD in Computational Science and Engineering at Georgia Institute of Technology.  He earned a bachelor’s degree in Mechanical Engineering at Drexel University. Ahmet has been doing research in the fields of computational materials science and materials informatics for the past 6 years, throughout his undergraduate and graduate studies. His current research focus is on leveraging statistical analysis and machine learning tools to solve big data analytics problems in materials science.
+  url: http://ahmetcecen.github.io/
+  visible: false
+
+- name: David Brough
+  role: Data Scientist / Materials Informatics
+  img: https://avatars0.githubusercontent.com/u/4368625?v=3&s=460
+  github: davidbrough1
+  bio: David is a PhD student in the School of Computational Science and Engineering at Georgia Institute of Technology. David earned a Master’s degree in experimental condensed matter physics at Brigham Young University where he fabricated and characterized thin-films and carbon nanotubes used in nanostructured high capacity battery electrodes and in X-ray windows. As an undergraduate, David studied theoretical physics and researched the evolution of chaotic systems using neural networks at Westminster College. He is a trainee in the NSF IGERT FLAMEL program, and one of the lead developers on PyMKS materials informatics toolkit.
+  url: http://davidbrough.net
+  visible: false
+
+- name: Surya R. Kalidindi
+  role: Materials Informatics
+  img: https://avatars1.githubusercontent.com/u/6601815?v=3&s=400
+  bio: Dr. Kalidindi’s research interests are broadly centered on designing material internal structure (including composition) for optimal performance in any selected application and identifying hybrid processing routes for its manufacture. To this end, he has employed a harmonious blend of experimental, theoretical, and numerical approaches in his research.
+  url: http://mined.gatech.edu/
+  visible: false
+
+- name: Jessie Galasso-Carbonnel
+  role: Assistant Professor
+  # img: https://avatars.githubusercontent.com/u/79425174?v=4
+  img: jessie-image.png
+  bio: Research interests of Professor Jessie include software reverse engineering, knowledge extraction and representation, variability management and modeling, and software repository mining.
+  url: https://jgalasso.github.io//
+  visible: true
+
+- name: Houari Sahraoui
+  role: Full Professor
+  img: houari-image.png
+  bio: Research interests of Professor Houari include automated software engineering (SE), Search-base SE, Model-Driven Engineering software visualization, program comprehension, and re-engineering.
+  url: https://www.iro.umontreal.ca/~sahraouh/index_eng.html
+  visible: true
+
+- name: Ulrich Aïvodji
+  role: Assistant Professor
+  img: ulrich-image.png
+  bio: Research interests of Professor Ulrich include computer security, data privacy, optimization, and machine learning, with a special focus on various aspects of trustworthy machine learning, such as fairness, privacy-preserving machine learning, and explainability.
+  url: https://aivodji.github.io/
+  visible: true
+
+- name: Foutse Khomh
+  role: Full Professor
+  img: foutse-image.png
+  bio: Research interests of Professor  Foutse Khomh include software maintenance and evolution, cloud engineering, service-centric software engineering, machine learning systems engineering, and dependable and trustworthy artificial intelligence.
+  url: https://www.polymtl.ca/expertises/en/khomh-foutse
+  visible: true
+
+- name: Hyacinth Ali
+  role: Postdoctoral Fellow
+  img: hyacinth-image.png
+  bio: Research interests of Dr. Hyacinth include trusthworthy AI, Requirement Engineering for AI, Model-Driven Engineering, Cloud Computing, and Enterprise Application Integration.
+  url: https://hyacinth-ali.github.io/web/
+  visible: true
